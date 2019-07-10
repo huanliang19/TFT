@@ -6,7 +6,7 @@
     <meta name="author" content="Huan">
     <meta name="keywords" content="HTML, Test">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Huan's Website</title>
+    <title>SpicyShrimpChip's TFT tool</title>
   </head>
 
 
@@ -18,149 +18,559 @@
       position: absolute;
       top: 15%;
       left: 40%;
-    }
+      }
 
     #complete_items {
       position: absolute;
       top: 45%;
-      left: 40%;
-    }
+      left: 10%;
+      display: flex;
+      }
 
     #button_up {
       position: absolute;
       top: 12%;
       left: 40%;
-    }
+      }
 
     #button_down {
       position: absolute;
       top: 20%;
       left: 40%;
-    }
+      }
 
+
+    #resetbutton {
+      position: absolute;
+      top: 15%;
+      left: 35%;
+      display: flex;
+      }
+
+    #count{
+      position: absolute;
+      top: 18%;
+      left: 40%;
+      letter-spacing: 12px;
+      font-size: 40px;
+      font-style: normal;
+    }
     button {
-    width:48px; /* or whatever */
-    height:30px; /* or whatever */
-    }
-
+      width:48px;
+      height:30px;
+      }
     </style>
 
     <div id="recipe_items">
           <img src="http://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/1038.png" alt="B.F. Sword" data-item-id="1"
            width="48"
-           data-toggle="tooltip"
+           title="B.F. Sword
+
++20 Attack Damage"
            data-tooltip-url="https://lolchess.gg/tooltip/item/1">
            <img src="http://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/1043.png" alt="Recurve Bow" data-item-id="2"
            width="48"
-           data-toggle="tooltip"
+           title="Recurve Bow
+
++15% Attack Speed"
            data-tooltip-url="https://lolchess.gg/tooltip/item/2">
            <img src="http://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/1031.png" alt="Chain Vest" data-item-id="3"
            width="48"
-           data-toggle="tooltip"
+           title="Chain Vest
+
++20 Armor"
            data-tooltip-url="https://lolchess.gg/tooltip/item/3">
            <img src="http://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/1057.png" alt="Negatron Cloak" data-item-id="4"
            width="48"
-           data-toggle="tooltip"
+           title="Negatron Cloak
+
++20 Magic Resist"
            data-tooltip-url="https://lolchess.gg/tooltip/item/4">
            <img src="http://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/1058.png" alt="Needlessly Large Rod" data-item-id="5"
            width="48"
-           data-toggle="tooltip"
+           title="Needlessly Large Rod
+
++20% Spell Damage"
            data-tooltip-url="https://lolchess.gg/tooltip/item/5">
            <img src="http://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3070.png" alt="Tear of the Goddess" data-item-id="6"
            width="48"
-           data-toggle="tooltip"
+           title="Tear of the Goddess
+
++20 starting mana"
            data-tooltip-url="https://lolchess.gg/tooltip/item/6">
            <img src="http://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/1011.png" alt="Giant's Belt" data-item-id="7"
            width="48"
-           data-toggle="tooltip"
+           title="Giant's Belt
+
++200 Health"
            data-tooltip-url="https://lolchess.gg/tooltip/item/7">
            <img src="http://static.lolchess.gg/images/tft/item/Spatula.png" alt="Spatula" data-item-id="8"
            width="48"
-           data-toggle="tooltip"
+           title="Spatula
+
+You will get a special ability"
            data-tooltip-url="https://lolchess.gg/tooltip/item/8">
           </div>
 
           <div id="complete_items">
-                <img src="http://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3031.png" img id="InfinityEdge" alt="Infinity Edge" data-item-id="9"
+                <img src="http://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3031.png" img id="InfinityEdge" alt="InfinityEdge" data-item-id="9"
                  width="48"
+                 title="Infinity Edge
+
+Critical Strikes deal +100% damage
++20 Attack Damage
++20 Attack Damage"
                  style="display:none;">
-                 <img src="http://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/1043.png" alt="Recurve Bow" data-item-id="2"
-                 width="48"
-                 data-toggle="tooltip"
-                 data-tooltip-url="https://lolchess.gg/tooltip/item/2">
-                 <img src="http://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/1031.png" alt="Chain Vest" data-item-id="3"
-                 width="48"
-                 data-toggle="tooltip"
-                 data-tooltip-url="https://lolchess.gg/tooltip/item/3">
-                 <img src="http://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/1057.png" alt="Negatron Cloak" data-item-id="4"
-                 width="48"
-                 data-toggle="tooltip"
-                 data-tooltip-url="https://lolchess.gg/tooltip/item/4">
-                 <img src="http://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/1058.png" alt="Needlessly Large Rod" data-item-id="5"
-                 width="48"
-                 data-toggle="tooltip"
-                 data-tooltip-url="https://lolchess.gg/tooltip/item/5">
-                 <img src="http://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3070.png" alt="Tear of the Goddess" data-item-id="6"
-                 width="48"
-                 data-toggle="tooltip"
-                 data-tooltip-url="https://lolchess.gg/tooltip/item/6">
-                 <img src="http://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/1011.png" alt="Giant's Belt" data-item-id="7"
-                 width="48"
-                 data-toggle="tooltip"
-                 data-tooltip-url="https://lolchess.gg/tooltip/item/7">
-                 <img src="http://static.lolchess.gg/images/tft/item/Spatula.png" alt="Spatula" data-item-id="8"
-                 width="48"
-                 data-toggle="tooltip"
-                 data-tooltip-url="https://lolchess.gg/tooltip/item/8">
+                 <img src="https://static.lolchess.gg/images/tft/item/SwordOfTheDivine.png" img id="SwordoftheDivine" alt="SwordoftheDivine" data-item-id="10"
+                  width="48"
+                  title="Sword of the Divine
+
+Each second, the wearer has a 5% chance to gain 100% Critical Strike
++20 Attack Damage
++15% Attack Speed"
+                  style="display:none;">
+                  <img src="https://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3094.png" img id="RapidFireCannon" alt="RapidFireCannon" data-item-id="11"
+                   width="48"
+                   title="Rapid Firecannon
+
+Wearer's attacks cannot be dodged. Attack Range is doubled
++15% Attack Speed
++15% Attack Speed"
+                   style="display:none;">
+                   <img src="https://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3026.png" img id="GuardianAngels" alt="GuardianAngels" data-item-id="12"
+                    width="48"
+                    title="Guardian Angel
+
+Wearer revives with 500 HP
++20 Attack Damage
++20 Armor"
+                    style="display:none;">
+                    <img src="https://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3046.png" img id="PhantomDancer" alt="PhantomDancer" data-item-id="13"
+                     width="48"
+                     title="Phantom Dancer
+
+Wearer dodges all Critical Strikes
++15% Attack Speed
++20 Armor"
+                     style="display:none;">
+                     <img src="https://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3075.png" img id="Thornmail" alt="Thornmail" data-item-id="14"
+                      width="48"
+                      title="Thornmail
+
+Reflect 35% of damage taken from attacks
++20 Armor
++20 Armor"
+                      style="display:none;">
+                      <img src="https://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3072.png" img id="BloodThirster" alt="BloodThirster" data-item-id="15"
+                       width="48"
+                       title="The Bloodthirster
+
+Attacks heal for 50% of damage
++20 Attack Damage
++20 Magic Resist"
+                       style="display:none;">
+                       <img src="https://static.lolchess.gg/images/tft/item/CursedBlade.png" img id="CursedBlade" alt="CursedBlade" data-item-id="16"
+                        width="48"
+                        title="Cursed Blade
+
+Attacks have a low chance to shrink (Reduce enemy's star level by 1)
++15% Attack Speed
++20 Magic Resist"
+                        style="display:none;">
+                       <img src="https://static.lolchess.gg/images/tft/item/SwordBreaker.png" img id="SwordBreaker" alt="SwordBreaker" data-item-id="17"
+                        width="48"
+                        title="Sword Breaker
+
+Attacks have a chance to disarm
++20 Armor
++20 Magic Resist"
+                        style="display:none;">
+                        <img src="https://static.lolchess.gg/images/tft/item/DragonsClaw.png" img id="DragonsClaw" alt="DragonsClaw" data-item-id="18"
+                         width="48"
+                         title="Dragon's Claw
+
+Gain 83% resistance to magic damage
++20 Magic Resist
++20 Magic Resist"
+                         style="display:none;">
+                         <img src="https://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3146.png" img id="HextechGunblade" alt="HextechGunblade" data-item-id="19"
+                          width="48"
+                          title="Hextech Gunblade
+
+Heal for 25% of all damage dealt
++20 Attack Damage
++20% Spell Damage"
+                          style="display:none;">
+                          <img src="https://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3124.png" img id="GuinsoosRageBlade" alt="GuinsoosRageBlade" data-item-id="20"
+                           width="48"
+                           title="Guinsoo's Rageblade
+
+Attack grant 3% Attack Speed. Stacks infinitely.
++15% Attack Speed
++20% Spell Damage"
+                           style="display:none;">
+                           <img src="https://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3190.png" img id="LocketoftheIronSoliari" alt="LocketoftheIronSoliari" data-item-id="21"
+                            width="48"
+                            title="Locket of the Iron Solari
+
+On start of combat, all adjacent allies gain a shield of 200
++20 Armor
++20% Spell Damage"
+                            style="display:none;">
+                            <img src="https://static.lolchess.gg/images/tft/item/IonicSpark.png" img id="IonicSpark" alt="IonicSpark" data-item-id="22"
+                             width="48"
+                             title="Ionic Spark
+
+Whenever an enemy casts a spell, they take 200 damage
++20 Magic Resist
++20% Spell Damage"
+                             style="display:none;">
+                             <img src="https://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3089.png" img id="RabadonsDeathcap" alt="RabadonsDeathcap" data-item-id="23"
+                              width="48"
+                              title="Rabadon's Deathcap
+
+Wearer's Spell Damage stat is amplified by 50%
++20% Spell Damage
++20% Spell Damage"
+                              style="display:none;">
+                              <img src="https://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3161.png" img id="SpearofShojin" alt="SpearofShojin" data-item-id="24"
+                               width="48"
+                               title="Spear of Shojin
+
+After casting wearer gains 15% of its max mana per attack
++20 Attack Damage
++20 starting mana"
+                               style="display:none;">
+                               <img src="https://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3087.png" img id="StaticShiv" alt="StaticShiv" data-item-id="25"
+                                width="48"
+                                title="Statikk Shiv
+
+Every 3rd attack deals 100 splash magical damage
++15% Attack Speed
++20 starting mana"
+                                style="display:none;">
+                                <img src="https://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3110.png" img id="FrozenHeart" alt="FrozenHeart" data-item-id="26"
+                                 width="48"
+                                 title="Frozen Heart
+
+Adjacent enemies lost 20% Attack Speed.
++20 Armor
++20 starting mana"
+                                 style="display:none;">
+                                 <img src="https://static.lolchess.gg/images/tft/item/Hush.png" img id="Hush" alt="Hush" data-item-id="27"
+                                  width="48"
+                                  title="Hush
+
+Attacks have a high chance to Silence
++20 Magic Resist
++20 starting mana"
+                                  style="display:none;">
+                                  <img src="https://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3285.png" img id="LudensEcho" alt="LudensEcho" data-item-id="28"
+                                   width="48"
+                                   title="Luden's Echo
+
+Spells deal 200 splash damage on hit
++20% Spell Damage
++20 starting mana"
+                                   style="display:none;">
+                                   <img src="https://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3040.png" img id="SeraphsEmbrace" alt="SeraphsEmbrace" data-item-id="29"
+                                    width="48"
+                                    title="Seraph's Embrace
+
+Regain 20 mana each time a spell is cast
++20 starting mana
++20 starting mana
+Tear of the Goddess  Tear of the Goddess"
+                                    style="display:none;">
+                                    <img src="https://static.lolchess.gg/images/tft/item/ZekesHerald.png" img id="ZekesHerald" alt="ZekesHerald" data-item-id="30"
+                                     width="48"
+                                     title="Zeke's Herald
+
+Adjacent allies gain 10% Attack Speed.
++20 Attack Damage
++200 Health"
+                                     style="display:none;">
+                                     <img src="https://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3748.png" img id="TitanicHydra" alt="TitanicHydra" data-item-id="31"
+                                      width="48"
+                                      title="Titanic Hydra
+
+Attacks deal 10% of the wearer's max Health as splash damage
++15% Attack Speed
++200 Health"
+                                      style="display:none;">
+                                      <img src="https://static.lolchess.gg/images/tft/item/RedBuff.png" img id="RedBuff" alt="RedBuff" data-item-id="32"
+                                       width="48"
+                                       title="Red Buff
+
+Attacks deal 2.5% burn damage
++20 Armor
++200 Health"
+                                       style="display:none;">
+                                       <img src="https://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3172.png" img id="Zephyr" alt="Zephyr" data-item-id="33"
+                                        width="48"
+                                        title="Zephyr
+
+On start of combat, banish an enemy for 5 seconds
++20 Magic Resist
++200 Health"
+                                        style="display:none;">
+                                        <img src="https://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3165.png" img id="Morellonomicon" alt="Morellonomicon" data-item-id="34"
+                                         width="48"
+                                         title="Morellonomicon
+
+Spells deal burn damage equal to 5% of the enemy's maximum health per second
++20% Spell Damage
++200 Health"
+                                         style="display:none;">
+                                         <img src="https://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3107.png" img id="Redemption" alt="Redemption" data-item-id="35"
+                                          width="48"
+                                          title="Redemption
+
+On death, heal all nearby allies for 1000 Health
++20 starting mana
++200 Health"
+                                          style="display:none;">
+                                          <img src="https://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3083.png" img id="WarmogsArmor" alt="WarmogsArmor" data-item-id="36"
+                                           width="48"
+                                           title="Warmog's Armor
+
+Wearer regenerates 3% max Health per second
++200 Health
++200 Health"
+                                           style="display:none;">
+                                           <img src="https://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3142.png" img id="YoumuusGhostBlade" alt="YoumuusGhostBlade" data-item-id="37"
+                                            width="48"
+                                            title="Youmuu's Ghostblade
+
+Wearer is also an Assassin
++20 Attack Damage"
+                                            style="display:none;">
+                                            <img src="https://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3153.png" img id="BladeoftheRuinedKing" alt="BladeoftheRuinedKing" data-item-id="38"
+                                             width="48"
+                                             title="Blade of the Ruined King
+
+Wearer is also a Blademaster
++15% Attack Speed"
+                                             style="display:none;">
+                                             <img src="https://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3109.png" img id="KnightsVow" alt="KnightsVow" data-item-id="39"
+                                              width="48"
+                                              title="Knight's Vow
+
+Wearer is also a Knight
++20 Armor"
+                                              style="display:none;">
+                                              <img src="https://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3085.png" img id="RunaansHurricane" alt="RunaansHurricane" data-item-id="40"
+                                               width="48"
+                                               title="Runaan's Hurricane
+
+Attack target 2 additional enemies. These additional attacks deal 50% damage
++20 Magic Resist"
+                                               style="display:none;">
+                                               <img src="https://static.lolchess.gg/images/tft/item/Yuumi.png" img id="Yuumi" alt="Yuumi" data-item-id="41"
+                                                width="48"
+                                                title="Yuumi
+
+Wearer is also a Sorcerer
++20% Spell Damage"
+                                                style="display:none;">
+                                                <img src="https://static.lolchess.gg/images/tft/item/Aatrox.png" img id="Darkin" alt="Darkin" data-item-id="42"
+                                                 width="48"
+                                                 title="Darkin
+
+Wearer is also a Demon
++20 starting mana
+"
+                                                 style="display:none;">
+                                                 <img src="https://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3022.png" img id="FrozenMallet" alt="FrozenMallet" data-item-id="43"
+                                                  width="48"
+                                                  title="Frozen Mallet
+
+Wearer is also a Glacial
++200 Health"
+                                                  style="display:none;">
+                                                  <img src="https://static.lolchess.gg/images/tft/item/ForceOfNature.png" img id="ForceofNature" alt="ForceofNature" data-item-id="44"
+                                                   width="48"
+                                                   title="Force of Nature
+
+Gain +1 team size"
+                                                   style="display:none;">
                 </div>
 
           <div id="button_up">
-                <button style="background:url(https://uc18aa603dc234b99a960f4c5cbc.previews.dropboxusercontent.com/p/thumb/AAdvaXmdNqkTDKKOOn5HDfNc1s99VyzjQwi1m3y4yZz6jt3QKb_-qDtw9_Jy2K0Vjza2UHT3CIOqz3OQL3W0bsgcCn0lt6L2AaHyY45BK8bZ-EhsHt61ZIthxhxwbuAliobbTllzkimO7EB0rE2rf5p8Gu9JfThbL9Bxuhxs2zGu8EK-uaU-89BNODfMGDgd4olzLvKLr7FwST5wzqHwSYqTtlhGM6u46f9u7RR9yaG2X7uLxbWfdXJrIgICvqAOOuHsxXVSSqzdG7fTVhGq2ge_V5qym7tuoV3jiNUkdICF-A6GowirvX43jz4rDHkcrZUGjZQMANZ3s-VlAJNK7Otn5qZQBJTRI0LTayf1MOaZNziBMIkdGcHj0CyGqeDyozo/p.png?fv_content=true&size_mode=5)" onclick="showIMG()">
+                <button onclick="increaseBF(1)" style="background:url(https://uc18aa603dc234b99a960f4c5cbc.previews.dropboxusercontent.com/p/thumb/AAdvaXmdNqkTDKKOOn5HDfNc1s99VyzjQwi1m3y4yZz6jt3QKb_-qDtw9_Jy2K0Vjza2UHT3CIOqz3OQL3W0bsgcCn0lt6L2AaHyY45BK8bZ-EhsHt61ZIthxhxwbuAliobbTllzkimO7EB0rE2rf5p8Gu9JfThbL9Bxuhxs2zGu8EK-uaU-89BNODfMGDgd4olzLvKLr7FwST5wzqHwSYqTtlhGM6u46f9u7RR9yaG2X7uLxbWfdXJrIgICvqAOOuHsxXVSSqzdG7fTVhGq2ge_V5qym7tuoV3jiNUkdICF-A6GowirvX43jz4rDHkcrZUGjZQMANZ3s-VlAJNK7Otn5qZQBJTRI0LTayf1MOaZNziBMIkdGcHj0CyGqeDyozo/p.png?fv_content=true&size_mode=5)" onclick="showIMG()">
                </button>
-               <button style="background:url(https://uc18aa603dc234b99a960f4c5cbc.previews.dropboxusercontent.com/p/thumb/AAdvaXmdNqkTDKKOOn5HDfNc1s99VyzjQwi1m3y4yZz6jt3QKb_-qDtw9_Jy2K0Vjza2UHT3CIOqz3OQL3W0bsgcCn0lt6L2AaHyY45BK8bZ-EhsHt61ZIthxhxwbuAliobbTllzkimO7EB0rE2rf5p8Gu9JfThbL9Bxuhxs2zGu8EK-uaU-89BNODfMGDgd4olzLvKLr7FwST5wzqHwSYqTtlhGM6u46f9u7RR9yaG2X7uLxbWfdXJrIgICvqAOOuHsxXVSSqzdG7fTVhGq2ge_V5qym7tuoV3jiNUkdICF-A6GowirvX43jz4rDHkcrZUGjZQMANZ3s-VlAJNK7Otn5qZQBJTRI0LTayf1MOaZNziBMIkdGcHj0CyGqeDyozo/p.png?fv_content=true&size_mode=5)">
+               <button onclick="increaseBF(2)" style="background:url(https://uc18aa603dc234b99a960f4c5cbc.previews.dropboxusercontent.com/p/thumb/AAdvaXmdNqkTDKKOOn5HDfNc1s99VyzjQwi1m3y4yZz6jt3QKb_-qDtw9_Jy2K0Vjza2UHT3CIOqz3OQL3W0bsgcCn0lt6L2AaHyY45BK8bZ-EhsHt61ZIthxhxwbuAliobbTllzkimO7EB0rE2rf5p8Gu9JfThbL9Bxuhxs2zGu8EK-uaU-89BNODfMGDgd4olzLvKLr7FwST5wzqHwSYqTtlhGM6u46f9u7RR9yaG2X7uLxbWfdXJrIgICvqAOOuHsxXVSSqzdG7fTVhGq2ge_V5qym7tuoV3jiNUkdICF-A6GowirvX43jz4rDHkcrZUGjZQMANZ3s-VlAJNK7Otn5qZQBJTRI0LTayf1MOaZNziBMIkdGcHj0CyGqeDyozo/p.png?fv_content=true&size_mode=5)">
               </button>
-              <button style="background:url(https://uc18aa603dc234b99a960f4c5cbc.previews.dropboxusercontent.com/p/thumb/AAdvaXmdNqkTDKKOOn5HDfNc1s99VyzjQwi1m3y4yZz6jt3QKb_-qDtw9_Jy2K0Vjza2UHT3CIOqz3OQL3W0bsgcCn0lt6L2AaHyY45BK8bZ-EhsHt61ZIthxhxwbuAliobbTllzkimO7EB0rE2rf5p8Gu9JfThbL9Bxuhxs2zGu8EK-uaU-89BNODfMGDgd4olzLvKLr7FwST5wzqHwSYqTtlhGM6u46f9u7RR9yaG2X7uLxbWfdXJrIgICvqAOOuHsxXVSSqzdG7fTVhGq2ge_V5qym7tuoV3jiNUkdICF-A6GowirvX43jz4rDHkcrZUGjZQMANZ3s-VlAJNK7Otn5qZQBJTRI0LTayf1MOaZNziBMIkdGcHj0CyGqeDyozo/p.png?fv_content=true&size_mode=5)">
+              <button onclick="increaseBF(3)" style="background:url(https://uc18aa603dc234b99a960f4c5cbc.previews.dropboxusercontent.com/p/thumb/AAdvaXmdNqkTDKKOOn5HDfNc1s99VyzjQwi1m3y4yZz6jt3QKb_-qDtw9_Jy2K0Vjza2UHT3CIOqz3OQL3W0bsgcCn0lt6L2AaHyY45BK8bZ-EhsHt61ZIthxhxwbuAliobbTllzkimO7EB0rE2rf5p8Gu9JfThbL9Bxuhxs2zGu8EK-uaU-89BNODfMGDgd4olzLvKLr7FwST5wzqHwSYqTtlhGM6u46f9u7RR9yaG2X7uLxbWfdXJrIgICvqAOOuHsxXVSSqzdG7fTVhGq2ge_V5qym7tuoV3jiNUkdICF-A6GowirvX43jz4rDHkcrZUGjZQMANZ3s-VlAJNK7Otn5qZQBJTRI0LTayf1MOaZNziBMIkdGcHj0CyGqeDyozo/p.png?fv_content=true&size_mode=5)">
              </button>
-             <button style="background:url(https://uc18aa603dc234b99a960f4c5cbc.previews.dropboxusercontent.com/p/thumb/AAdvaXmdNqkTDKKOOn5HDfNc1s99VyzjQwi1m3y4yZz6jt3QKb_-qDtw9_Jy2K0Vjza2UHT3CIOqz3OQL3W0bsgcCn0lt6L2AaHyY45BK8bZ-EhsHt61ZIthxhxwbuAliobbTllzkimO7EB0rE2rf5p8Gu9JfThbL9Bxuhxs2zGu8EK-uaU-89BNODfMGDgd4olzLvKLr7FwST5wzqHwSYqTtlhGM6u46f9u7RR9yaG2X7uLxbWfdXJrIgICvqAOOuHsxXVSSqzdG7fTVhGq2ge_V5qym7tuoV3jiNUkdICF-A6GowirvX43jz4rDHkcrZUGjZQMANZ3s-VlAJNK7Otn5qZQBJTRI0LTayf1MOaZNziBMIkdGcHj0CyGqeDyozo/p.png?fv_content=true&size_mode=5)">
+             <button onclick="increaseBF(4)" style="background:url(https://uc18aa603dc234b99a960f4c5cbc.previews.dropboxusercontent.com/p/thumb/AAdvaXmdNqkTDKKOOn5HDfNc1s99VyzjQwi1m3y4yZz6jt3QKb_-qDtw9_Jy2K0Vjza2UHT3CIOqz3OQL3W0bsgcCn0lt6L2AaHyY45BK8bZ-EhsHt61ZIthxhxwbuAliobbTllzkimO7EB0rE2rf5p8Gu9JfThbL9Bxuhxs2zGu8EK-uaU-89BNODfMGDgd4olzLvKLr7FwST5wzqHwSYqTtlhGM6u46f9u7RR9yaG2X7uLxbWfdXJrIgICvqAOOuHsxXVSSqzdG7fTVhGq2ge_V5qym7tuoV3jiNUkdICF-A6GowirvX43jz4rDHkcrZUGjZQMANZ3s-VlAJNK7Otn5qZQBJTRI0LTayf1MOaZNziBMIkdGcHj0CyGqeDyozo/p.png?fv_content=true&size_mode=5)">
             </button>
-            <button style="background:url(https://uc18aa603dc234b99a960f4c5cbc.previews.dropboxusercontent.com/p/thumb/AAdvaXmdNqkTDKKOOn5HDfNc1s99VyzjQwi1m3y4yZz6jt3QKb_-qDtw9_Jy2K0Vjza2UHT3CIOqz3OQL3W0bsgcCn0lt6L2AaHyY45BK8bZ-EhsHt61ZIthxhxwbuAliobbTllzkimO7EB0rE2rf5p8Gu9JfThbL9Bxuhxs2zGu8EK-uaU-89BNODfMGDgd4olzLvKLr7FwST5wzqHwSYqTtlhGM6u46f9u7RR9yaG2X7uLxbWfdXJrIgICvqAOOuHsxXVSSqzdG7fTVhGq2ge_V5qym7tuoV3jiNUkdICF-A6GowirvX43jz4rDHkcrZUGjZQMANZ3s-VlAJNK7Otn5qZQBJTRI0LTayf1MOaZNziBMIkdGcHj0CyGqeDyozo/p.png?fv_content=true&size_mode=5)">
+            <button onclick="increaseBF(5)" style="background:url(https://uc18aa603dc234b99a960f4c5cbc.previews.dropboxusercontent.com/p/thumb/AAdvaXmdNqkTDKKOOn5HDfNc1s99VyzjQwi1m3y4yZz6jt3QKb_-qDtw9_Jy2K0Vjza2UHT3CIOqz3OQL3W0bsgcCn0lt6L2AaHyY45BK8bZ-EhsHt61ZIthxhxwbuAliobbTllzkimO7EB0rE2rf5p8Gu9JfThbL9Bxuhxs2zGu8EK-uaU-89BNODfMGDgd4olzLvKLr7FwST5wzqHwSYqTtlhGM6u46f9u7RR9yaG2X7uLxbWfdXJrIgICvqAOOuHsxXVSSqzdG7fTVhGq2ge_V5qym7tuoV3jiNUkdICF-A6GowirvX43jz4rDHkcrZUGjZQMANZ3s-VlAJNK7Otn5qZQBJTRI0LTayf1MOaZNziBMIkdGcHj0CyGqeDyozo/p.png?fv_content=true&size_mode=5)">
            </button>
-           <button style="background:url(https://uc18aa603dc234b99a960f4c5cbc.previews.dropboxusercontent.com/p/thumb/AAdvaXmdNqkTDKKOOn5HDfNc1s99VyzjQwi1m3y4yZz6jt3QKb_-qDtw9_Jy2K0Vjza2UHT3CIOqz3OQL3W0bsgcCn0lt6L2AaHyY45BK8bZ-EhsHt61ZIthxhxwbuAliobbTllzkimO7EB0rE2rf5p8Gu9JfThbL9Bxuhxs2zGu8EK-uaU-89BNODfMGDgd4olzLvKLr7FwST5wzqHwSYqTtlhGM6u46f9u7RR9yaG2X7uLxbWfdXJrIgICvqAOOuHsxXVSSqzdG7fTVhGq2ge_V5qym7tuoV3jiNUkdICF-A6GowirvX43jz4rDHkcrZUGjZQMANZ3s-VlAJNK7Otn5qZQBJTRI0LTayf1MOaZNziBMIkdGcHj0CyGqeDyozo/p.png?fv_content=true&size_mode=5)">
+           <button onclick="increaseBF(6)" style="background:url(https://uc18aa603dc234b99a960f4c5cbc.previews.dropboxusercontent.com/p/thumb/AAdvaXmdNqkTDKKOOn5HDfNc1s99VyzjQwi1m3y4yZz6jt3QKb_-qDtw9_Jy2K0Vjza2UHT3CIOqz3OQL3W0bsgcCn0lt6L2AaHyY45BK8bZ-EhsHt61ZIthxhxwbuAliobbTllzkimO7EB0rE2rf5p8Gu9JfThbL9Bxuhxs2zGu8EK-uaU-89BNODfMGDgd4olzLvKLr7FwST5wzqHwSYqTtlhGM6u46f9u7RR9yaG2X7uLxbWfdXJrIgICvqAOOuHsxXVSSqzdG7fTVhGq2ge_V5qym7tuoV3jiNUkdICF-A6GowirvX43jz4rDHkcrZUGjZQMANZ3s-VlAJNK7Otn5qZQBJTRI0LTayf1MOaZNziBMIkdGcHj0CyGqeDyozo/p.png?fv_content=true&size_mode=5)">
           </button>
-          <button style="background:url(https://uc18aa603dc234b99a960f4c5cbc.previews.dropboxusercontent.com/p/thumb/AAdvaXmdNqkTDKKOOn5HDfNc1s99VyzjQwi1m3y4yZz6jt3QKb_-qDtw9_Jy2K0Vjza2UHT3CIOqz3OQL3W0bsgcCn0lt6L2AaHyY45BK8bZ-EhsHt61ZIthxhxwbuAliobbTllzkimO7EB0rE2rf5p8Gu9JfThbL9Bxuhxs2zGu8EK-uaU-89BNODfMGDgd4olzLvKLr7FwST5wzqHwSYqTtlhGM6u46f9u7RR9yaG2X7uLxbWfdXJrIgICvqAOOuHsxXVSSqzdG7fTVhGq2ge_V5qym7tuoV3jiNUkdICF-A6GowirvX43jz4rDHkcrZUGjZQMANZ3s-VlAJNK7Otn5qZQBJTRI0LTayf1MOaZNziBMIkdGcHj0CyGqeDyozo/p.png?fv_content=true&size_mode=5)">
+          <button onclick="increaseBF(7)" style="background:url(https://uc18aa603dc234b99a960f4c5cbc.previews.dropboxusercontent.com/p/thumb/AAdvaXmdNqkTDKKOOn5HDfNc1s99VyzjQwi1m3y4yZz6jt3QKb_-qDtw9_Jy2K0Vjza2UHT3CIOqz3OQL3W0bsgcCn0lt6L2AaHyY45BK8bZ-EhsHt61ZIthxhxwbuAliobbTllzkimO7EB0rE2rf5p8Gu9JfThbL9Bxuhxs2zGu8EK-uaU-89BNODfMGDgd4olzLvKLr7FwST5wzqHwSYqTtlhGM6u46f9u7RR9yaG2X7uLxbWfdXJrIgICvqAOOuHsxXVSSqzdG7fTVhGq2ge_V5qym7tuoV3jiNUkdICF-A6GowirvX43jz4rDHkcrZUGjZQMANZ3s-VlAJNK7Otn5qZQBJTRI0LTayf1MOaZNziBMIkdGcHj0CyGqeDyozo/p.png?fv_content=true&size_mode=5)">
          </button>
-         <button style="background:url(https://uc18aa603dc234b99a960f4c5cbc.previews.dropboxusercontent.com/p/thumb/AAdvaXmdNqkTDKKOOn5HDfNc1s99VyzjQwi1m3y4yZz6jt3QKb_-qDtw9_Jy2K0Vjza2UHT3CIOqz3OQL3W0bsgcCn0lt6L2AaHyY45BK8bZ-EhsHt61ZIthxhxwbuAliobbTllzkimO7EB0rE2rf5p8Gu9JfThbL9Bxuhxs2zGu8EK-uaU-89BNODfMGDgd4olzLvKLr7FwST5wzqHwSYqTtlhGM6u46f9u7RR9yaG2X7uLxbWfdXJrIgICvqAOOuHsxXVSSqzdG7fTVhGq2ge_V5qym7tuoV3jiNUkdICF-A6GowirvX43jz4rDHkcrZUGjZQMANZ3s-VlAJNK7Otn5qZQBJTRI0LTayf1MOaZNziBMIkdGcHj0CyGqeDyozo/p.png?fv_content=true&size_mode=5)">
+         <button onclick="increaseBF(8)" style="background:url(https://uc18aa603dc234b99a960f4c5cbc.previews.dropboxusercontent.com/p/thumb/AAdvaXmdNqkTDKKOOn5HDfNc1s99VyzjQwi1m3y4yZz6jt3QKb_-qDtw9_Jy2K0Vjza2UHT3CIOqz3OQL3W0bsgcCn0lt6L2AaHyY45BK8bZ-EhsHt61ZIthxhxwbuAliobbTllzkimO7EB0rE2rf5p8Gu9JfThbL9Bxuhxs2zGu8EK-uaU-89BNODfMGDgd4olzLvKLr7FwST5wzqHwSYqTtlhGM6u46f9u7RR9yaG2X7uLxbWfdXJrIgICvqAOOuHsxXVSSqzdG7fTVhGq2ge_V5qym7tuoV3jiNUkdICF-A6GowirvX43jz4rDHkcrZUGjZQMANZ3s-VlAJNK7Otn5qZQBJTRI0LTayf1MOaZNziBMIkdGcHj0CyGqeDyozo/p.png?fv_content=true&size_mode=5)">
         </button>
                 </div>
 
           <div id="button_down">
-                  <button onclick="test()" style="background:url(https://uc70b57c4e75c286d4996b10e1d9.previews.dropboxusercontent.com/p/thumb/AAcHGJ7JJkMPMpYQ6a78HcaSwHChMGQR6MT7Gq6j41GCv2PgXOSB-4omM8saLIKySqogBz1vOO43W2TbSzrLUGevcqBblTh3y4dVb74heYYypCnPTFmbkBWK7XmJ-4h07rKfqOrfaNM-ELNkW6dE0n16xxQB6uGvK81kQMy0nTnY4L0aVyB9zaFeJbPk386bMhL2SO-Hfvw69U_daTIKQVB6wtgKEIDJNW2UXL9VJ-oTN0aFoBNJfz0TmWALrVbfDch6wnkjCcwV8j5080ABqdxPv1-dQBSZ3IPqKtVZfGoN0xfuAdcqJJGLIP5DbIVOPyvWbEBR4i8vu3YXmS-D6wlvznlOzGQ1ck6opq0m7y7-HxYVT6JOAQBC_sMiY7zKfdg/p.png?fv_content=true&size_mode=5)">
+                  <button onclick="decreaseBF(1)" style="background:url(https://uc70b57c4e75c286d4996b10e1d9.previews.dropboxusercontent.com/p/thumb/AAcHGJ7JJkMPMpYQ6a78HcaSwHChMGQR6MT7Gq6j41GCv2PgXOSB-4omM8saLIKySqogBz1vOO43W2TbSzrLUGevcqBblTh3y4dVb74heYYypCnPTFmbkBWK7XmJ-4h07rKfqOrfaNM-ELNkW6dE0n16xxQB6uGvK81kQMy0nTnY4L0aVyB9zaFeJbPk386bMhL2SO-Hfvw69U_daTIKQVB6wtgKEIDJNW2UXL9VJ-oTN0aFoBNJfz0TmWALrVbfDch6wnkjCcwV8j5080ABqdxPv1-dQBSZ3IPqKtVZfGoN0xfuAdcqJJGLIP5DbIVOPyvWbEBR4i8vu3YXmS-D6wlvznlOzGQ1ck6opq0m7y7-HxYVT6JOAQBC_sMiY7zKfdg/p.png?fv_content=true&size_mode=5)">
                  </button>
-                 <button style="background:url(https://uc70b57c4e75c286d4996b10e1d9.previews.dropboxusercontent.com/p/thumb/AAcHGJ7JJkMPMpYQ6a78HcaSwHChMGQR6MT7Gq6j41GCv2PgXOSB-4omM8saLIKySqogBz1vOO43W2TbSzrLUGevcqBblTh3y4dVb74heYYypCnPTFmbkBWK7XmJ-4h07rKfqOrfaNM-ELNkW6dE0n16xxQB6uGvK81kQMy0nTnY4L0aVyB9zaFeJbPk386bMhL2SO-Hfvw69U_daTIKQVB6wtgKEIDJNW2UXL9VJ-oTN0aFoBNJfz0TmWALrVbfDch6wnkjCcwV8j5080ABqdxPv1-dQBSZ3IPqKtVZfGoN0xfuAdcqJJGLIP5DbIVOPyvWbEBR4i8vu3YXmS-D6wlvznlOzGQ1ck6opq0m7y7-HxYVT6JOAQBC_sMiY7zKfdg/p.png?fv_content=true&size_mode=5)">
+                 <button onclick="decreaseBF(2)" style="background:url(https://uc70b57c4e75c286d4996b10e1d9.previews.dropboxusercontent.com/p/thumb/AAcHGJ7JJkMPMpYQ6a78HcaSwHChMGQR6MT7Gq6j41GCv2PgXOSB-4omM8saLIKySqogBz1vOO43W2TbSzrLUGevcqBblTh3y4dVb74heYYypCnPTFmbkBWK7XmJ-4h07rKfqOrfaNM-ELNkW6dE0n16xxQB6uGvK81kQMy0nTnY4L0aVyB9zaFeJbPk386bMhL2SO-Hfvw69U_daTIKQVB6wtgKEIDJNW2UXL9VJ-oTN0aFoBNJfz0TmWALrVbfDch6wnkjCcwV8j5080ABqdxPv1-dQBSZ3IPqKtVZfGoN0xfuAdcqJJGLIP5DbIVOPyvWbEBR4i8vu3YXmS-D6wlvznlOzGQ1ck6opq0m7y7-HxYVT6JOAQBC_sMiY7zKfdg/p.png?fv_content=true&size_mode=5)">
                 </button>
-                <button style="background:url(https://uc70b57c4e75c286d4996b10e1d9.previews.dropboxusercontent.com/p/thumb/AAcHGJ7JJkMPMpYQ6a78HcaSwHChMGQR6MT7Gq6j41GCv2PgXOSB-4omM8saLIKySqogBz1vOO43W2TbSzrLUGevcqBblTh3y4dVb74heYYypCnPTFmbkBWK7XmJ-4h07rKfqOrfaNM-ELNkW6dE0n16xxQB6uGvK81kQMy0nTnY4L0aVyB9zaFeJbPk386bMhL2SO-Hfvw69U_daTIKQVB6wtgKEIDJNW2UXL9VJ-oTN0aFoBNJfz0TmWALrVbfDch6wnkjCcwV8j5080ABqdxPv1-dQBSZ3IPqKtVZfGoN0xfuAdcqJJGLIP5DbIVOPyvWbEBR4i8vu3YXmS-D6wlvznlOzGQ1ck6opq0m7y7-HxYVT6JOAQBC_sMiY7zKfdg/p.png?fv_content=true&size_mode=5)">
+                <button onclick="decreaseBF(3)" style="background:url(https://uc70b57c4e75c286d4996b10e1d9.previews.dropboxusercontent.com/p/thumb/AAcHGJ7JJkMPMpYQ6a78HcaSwHChMGQR6MT7Gq6j41GCv2PgXOSB-4omM8saLIKySqogBz1vOO43W2TbSzrLUGevcqBblTh3y4dVb74heYYypCnPTFmbkBWK7XmJ-4h07rKfqOrfaNM-ELNkW6dE0n16xxQB6uGvK81kQMy0nTnY4L0aVyB9zaFeJbPk386bMhL2SO-Hfvw69U_daTIKQVB6wtgKEIDJNW2UXL9VJ-oTN0aFoBNJfz0TmWALrVbfDch6wnkjCcwV8j5080ABqdxPv1-dQBSZ3IPqKtVZfGoN0xfuAdcqJJGLIP5DbIVOPyvWbEBR4i8vu3YXmS-D6wlvznlOzGQ1ck6opq0m7y7-HxYVT6JOAQBC_sMiY7zKfdg/p.png?fv_content=true&size_mode=5)">
                </button>
-               <button style="background:url(https://uc70b57c4e75c286d4996b10e1d9.previews.dropboxusercontent.com/p/thumb/AAcHGJ7JJkMPMpYQ6a78HcaSwHChMGQR6MT7Gq6j41GCv2PgXOSB-4omM8saLIKySqogBz1vOO43W2TbSzrLUGevcqBblTh3y4dVb74heYYypCnPTFmbkBWK7XmJ-4h07rKfqOrfaNM-ELNkW6dE0n16xxQB6uGvK81kQMy0nTnY4L0aVyB9zaFeJbPk386bMhL2SO-Hfvw69U_daTIKQVB6wtgKEIDJNW2UXL9VJ-oTN0aFoBNJfz0TmWALrVbfDch6wnkjCcwV8j5080ABqdxPv1-dQBSZ3IPqKtVZfGoN0xfuAdcqJJGLIP5DbIVOPyvWbEBR4i8vu3YXmS-D6wlvznlOzGQ1ck6opq0m7y7-HxYVT6JOAQBC_sMiY7zKfdg/p.png?fv_content=true&size_mode=5)">
+               <button onclick="decreaseBF(4)" style="background:url(https://uc70b57c4e75c286d4996b10e1d9.previews.dropboxusercontent.com/p/thumb/AAcHGJ7JJkMPMpYQ6a78HcaSwHChMGQR6MT7Gq6j41GCv2PgXOSB-4omM8saLIKySqogBz1vOO43W2TbSzrLUGevcqBblTh3y4dVb74heYYypCnPTFmbkBWK7XmJ-4h07rKfqOrfaNM-ELNkW6dE0n16xxQB6uGvK81kQMy0nTnY4L0aVyB9zaFeJbPk386bMhL2SO-Hfvw69U_daTIKQVB6wtgKEIDJNW2UXL9VJ-oTN0aFoBNJfz0TmWALrVbfDch6wnkjCcwV8j5080ABqdxPv1-dQBSZ3IPqKtVZfGoN0xfuAdcqJJGLIP5DbIVOPyvWbEBR4i8vu3YXmS-D6wlvznlOzGQ1ck6opq0m7y7-HxYVT6JOAQBC_sMiY7zKfdg/p.png?fv_content=true&size_mode=5)">
               </button>
-              <button style="background:url(https://uc70b57c4e75c286d4996b10e1d9.previews.dropboxusercontent.com/p/thumb/AAcHGJ7JJkMPMpYQ6a78HcaSwHChMGQR6MT7Gq6j41GCv2PgXOSB-4omM8saLIKySqogBz1vOO43W2TbSzrLUGevcqBblTh3y4dVb74heYYypCnPTFmbkBWK7XmJ-4h07rKfqOrfaNM-ELNkW6dE0n16xxQB6uGvK81kQMy0nTnY4L0aVyB9zaFeJbPk386bMhL2SO-Hfvw69U_daTIKQVB6wtgKEIDJNW2UXL9VJ-oTN0aFoBNJfz0TmWALrVbfDch6wnkjCcwV8j5080ABqdxPv1-dQBSZ3IPqKtVZfGoN0xfuAdcqJJGLIP5DbIVOPyvWbEBR4i8vu3YXmS-D6wlvznlOzGQ1ck6opq0m7y7-HxYVT6JOAQBC_sMiY7zKfdg/p.png?fv_content=true&size_mode=5)">
+              <button onclick="decreaseBF(5)" style="background:url(https://uc70b57c4e75c286d4996b10e1d9.previews.dropboxusercontent.com/p/thumb/AAcHGJ7JJkMPMpYQ6a78HcaSwHChMGQR6MT7Gq6j41GCv2PgXOSB-4omM8saLIKySqogBz1vOO43W2TbSzrLUGevcqBblTh3y4dVb74heYYypCnPTFmbkBWK7XmJ-4h07rKfqOrfaNM-ELNkW6dE0n16xxQB6uGvK81kQMy0nTnY4L0aVyB9zaFeJbPk386bMhL2SO-Hfvw69U_daTIKQVB6wtgKEIDJNW2UXL9VJ-oTN0aFoBNJfz0TmWALrVbfDch6wnkjCcwV8j5080ABqdxPv1-dQBSZ3IPqKtVZfGoN0xfuAdcqJJGLIP5DbIVOPyvWbEBR4i8vu3YXmS-D6wlvznlOzGQ1ck6opq0m7y7-HxYVT6JOAQBC_sMiY7zKfdg/p.png?fv_content=true&size_mode=5)">
              </button>
-             <button style="background:url(https://uc70b57c4e75c286d4996b10e1d9.previews.dropboxusercontent.com/p/thumb/AAcHGJ7JJkMPMpYQ6a78HcaSwHChMGQR6MT7Gq6j41GCv2PgXOSB-4omM8saLIKySqogBz1vOO43W2TbSzrLUGevcqBblTh3y4dVb74heYYypCnPTFmbkBWK7XmJ-4h07rKfqOrfaNM-ELNkW6dE0n16xxQB6uGvK81kQMy0nTnY4L0aVyB9zaFeJbPk386bMhL2SO-Hfvw69U_daTIKQVB6wtgKEIDJNW2UXL9VJ-oTN0aFoBNJfz0TmWALrVbfDch6wnkjCcwV8j5080ABqdxPv1-dQBSZ3IPqKtVZfGoN0xfuAdcqJJGLIP5DbIVOPyvWbEBR4i8vu3YXmS-D6wlvznlOzGQ1ck6opq0m7y7-HxYVT6JOAQBC_sMiY7zKfdg/p.png?fv_content=true&size_mode=5)">
+             <button onclick="decreaseBF(6)" style="background:url(https://uc70b57c4e75c286d4996b10e1d9.previews.dropboxusercontent.com/p/thumb/AAcHGJ7JJkMPMpYQ6a78HcaSwHChMGQR6MT7Gq6j41GCv2PgXOSB-4omM8saLIKySqogBz1vOO43W2TbSzrLUGevcqBblTh3y4dVb74heYYypCnPTFmbkBWK7XmJ-4h07rKfqOrfaNM-ELNkW6dE0n16xxQB6uGvK81kQMy0nTnY4L0aVyB9zaFeJbPk386bMhL2SO-Hfvw69U_daTIKQVB6wtgKEIDJNW2UXL9VJ-oTN0aFoBNJfz0TmWALrVbfDch6wnkjCcwV8j5080ABqdxPv1-dQBSZ3IPqKtVZfGoN0xfuAdcqJJGLIP5DbIVOPyvWbEBR4i8vu3YXmS-D6wlvznlOzGQ1ck6opq0m7y7-HxYVT6JOAQBC_sMiY7zKfdg/p.png?fv_content=true&size_mode=5)">
             </button>
-            <button style="background:url(https://uc70b57c4e75c286d4996b10e1d9.previews.dropboxusercontent.com/p/thumb/AAcHGJ7JJkMPMpYQ6a78HcaSwHChMGQR6MT7Gq6j41GCv2PgXOSB-4omM8saLIKySqogBz1vOO43W2TbSzrLUGevcqBblTh3y4dVb74heYYypCnPTFmbkBWK7XmJ-4h07rKfqOrfaNM-ELNkW6dE0n16xxQB6uGvK81kQMy0nTnY4L0aVyB9zaFeJbPk386bMhL2SO-Hfvw69U_daTIKQVB6wtgKEIDJNW2UXL9VJ-oTN0aFoBNJfz0TmWALrVbfDch6wnkjCcwV8j5080ABqdxPv1-dQBSZ3IPqKtVZfGoN0xfuAdcqJJGLIP5DbIVOPyvWbEBR4i8vu3YXmS-D6wlvznlOzGQ1ck6opq0m7y7-HxYVT6JOAQBC_sMiY7zKfdg/p.png?fv_content=true&size_mode=5)">
+            <button onclick="decreaseBF(7)" style="background:url(https://uc70b57c4e75c286d4996b10e1d9.previews.dropboxusercontent.com/p/thumb/AAcHGJ7JJkMPMpYQ6a78HcaSwHChMGQR6MT7Gq6j41GCv2PgXOSB-4omM8saLIKySqogBz1vOO43W2TbSzrLUGevcqBblTh3y4dVb74heYYypCnPTFmbkBWK7XmJ-4h07rKfqOrfaNM-ELNkW6dE0n16xxQB6uGvK81kQMy0nTnY4L0aVyB9zaFeJbPk386bMhL2SO-Hfvw69U_daTIKQVB6wtgKEIDJNW2UXL9VJ-oTN0aFoBNJfz0TmWALrVbfDch6wnkjCcwV8j5080ABqdxPv1-dQBSZ3IPqKtVZfGoN0xfuAdcqJJGLIP5DbIVOPyvWbEBR4i8vu3YXmS-D6wlvznlOzGQ1ck6opq0m7y7-HxYVT6JOAQBC_sMiY7zKfdg/p.png?fv_content=true&size_mode=5)">
            </button>
-           <button style="background:url(https://uc70b57c4e75c286d4996b10e1d9.previews.dropboxusercontent.com/p/thumb/AAcHGJ7JJkMPMpYQ6a78HcaSwHChMGQR6MT7Gq6j41GCv2PgXOSB-4omM8saLIKySqogBz1vOO43W2TbSzrLUGevcqBblTh3y4dVb74heYYypCnPTFmbkBWK7XmJ-4h07rKfqOrfaNM-ELNkW6dE0n16xxQB6uGvK81kQMy0nTnY4L0aVyB9zaFeJbPk386bMhL2SO-Hfvw69U_daTIKQVB6wtgKEIDJNW2UXL9VJ-oTN0aFoBNJfz0TmWALrVbfDch6wnkjCcwV8j5080ABqdxPv1-dQBSZ3IPqKtVZfGoN0xfuAdcqJJGLIP5DbIVOPyvWbEBR4i8vu3YXmS-D6wlvznlOzGQ1ck6opq0m7y7-HxYVT6JOAQBC_sMiY7zKfdg/p.png?fv_content=true&size_mode=5)">
+           <button onclick="decreaseBF(8)" style="background:url(https://uc70b57c4e75c286d4996b10e1d9.previews.dropboxusercontent.com/p/thumb/AAcHGJ7JJkMPMpYQ6a78HcaSwHChMGQR6MT7Gq6j41GCv2PgXOSB-4omM8saLIKySqogBz1vOO43W2TbSzrLUGevcqBblTh3y4dVb74heYYypCnPTFmbkBWK7XmJ-4h07rKfqOrfaNM-ELNkW6dE0n16xxQB6uGvK81kQMy0nTnY4L0aVyB9zaFeJbPk386bMhL2SO-Hfvw69U_daTIKQVB6wtgKEIDJNW2UXL9VJ-oTN0aFoBNJfz0TmWALrVbfDch6wnkjCcwV8j5080ABqdxPv1-dQBSZ3IPqKtVZfGoN0xfuAdcqJJGLIP5DbIVOPyvWbEBR4i8vu3YXmS-D6wlvznlOzGQ1ck6opq0m7y7-HxYVT6JOAQBC_sMiY7zKfdg/p.png?fv_content=true&size_mode=5)">
           </button>
           </div>
 
           <script>
-            var div = document.getElementById("button_down")
-            function test(){
-              div.setAttribute()
+            function showIMG(item){
+              document.getElementById(item).style.display='block';
             }
-            function showIMG(){
-              document.getElementById('InfinityEdge').style.display='block';
+
+            function closeIMG(item){
+              document.getElementById(item).style.display='none';
             }
+
+            function addIND(n){
+              var startIND = ((n*(n+1))/2)-1;
+              var startIND2 = ((n*(n-1))/2);
+              k = n-1;
+              for(i = startIND; i<36;i+=k){
+                  chart[i]++;
+                  k++;
+              }
+              for(i = startIND2; i<=startIND; i++){
+                chart[i]++;
+              }
+            }
+
+            function subIND(n){
+              var startIND = ((n*(n+1))/2)-1;
+              var startIND2 = ((n*(n-1))/2);
+              k = n-1;
+              for(i = startIND; i<36;i+=k){
+                chart[i]--;
+                k++;
+              }
+              for(i = startIND2; i<=startIND; i++){
+                chart[i]--;
+              }
+            }
+
+            var diagInd = [0,2,5,9,14,20,27,35]
+            var chart = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+            var recipeChart = [0,0,0,0,0,0,0,0,0]
+            var itemCount = [0,0,0,0,0,0,0,0]
+            var names = ["InfinityEdge","SwordoftheDivine","RapidFireCannon","GuardianAngels","PhantomDancer",
+                        "Thornmail","BloodThirster","CursedBlade","SwordBreaker","DragonsClaw",
+                        "HextechGunblade","GuinsoosRageBlade","LocketoftheIronSoliari","IonicSpark","RabadonsDeathcap",
+                        "SpearofShojin","StaticShiv","FrozenHeart","Hush","LudensEcho",
+                        "SeraphsEmbrace","ZekesHerald","TitanicHydra","RedBuff","Zephyr",
+                        "Morellonomicon","Redemption","WarmogsArmor","YoumuusGhostBlade","BladeoftheRuinedKing","KnightsVow",
+                        "RunaansHurricane","Yuumi","Darkin","FrozenMallet","ForceofNature"]
+            function addtester(x){
+              // if(diagInd.indexOf(x) >= 0){
+              if(diagInd.indexOf(x) >= 0){
+                if(recipeChart[x] >= 2){
+                  showIMG(names[x]);
+                }
+              }
+              else if(chart[x] >= 2){
+                  showIMG(names[x]);
+              }
+            }
+
+            function subtester(x){
+              if(diagInd.indexOf(x) >= 0){
+                if(chart[x] < 4){
+                  closeIMG(names[x]);
+                }
+              }
+              else if(chart[x] < 2){
+                  closeIMG(names[x]);
+              }
+            }
+
+            function increaseBF(j){
+              if(recipeChart[j] < 1){
+                recipeChart[j]++;
+                addIND(j);
+              }
+              else{
+                showIMG(names[diagInd[j-1]]);
+              }
+              for(i=0; i<36; i++){
+                addtester(i);
+              }
+              itemCount[j-1]++;
+              showCount();
+            }
+
+            function decreaseBF(j){
+              if(recipeChart[j] >= 1){
+                recipeChart[j]--;
+                subIND(j);
+              }
+              else{
+                closeIMG(names[diagInd[j-1]]);
+              }
+              for(i=0; i<36; i++){
+                subtester(i);
+              }
+              if(itemCount[j-1]>0){
+                itemCount[j-1]--;
+              }
+              showCount();
+            }
+
           </script>
+<!--  askdjfhkajsdhfklashdfklashdfklhasdklfh-->
+          <button onclick="myFunction()">Debug</button>
+          <p id="demo"></p>
+
+          <script>
+          function myFunction() {
+            var y = chart.toString();
+            document.getElementById("demo").innerHTML = y;
+          }
+          </script>
+<!-- asjdhfgahjsdgfjasdgfashkdgfjkashdgf -->
+        <div id="resetbutton">
+        <button onclick="reset()">reset</button>
+        <p id="reset"></p>
+      </div>
+
+        <script>
+        function reset() {
+          recipeChart = [0,0,0,0,0,0,0,0,0];
+          chart = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+          itemCount = [0,0,0,0,0,0,0,0];
+          increaseBF(1);
+          decreaseBF(1);
+        }
+        </script>
+
+        <p id="count"></p>
+        <script>
+        function showCount() {
+          var z = itemCount.toString();
+          document.getElementById("count").innerHTML = z;
+        }
+        </script>
+
+
 
   </body>
 </html>
