@@ -33,19 +33,39 @@
       display: flex;
       }
 
-    #button_up {
+    #buttonuplocation {
       position: absolute;
       top: 12%;
       left: 40%;
       }
 
-    #button_down {
+    #buttondownlocation {
       position: absolute;
       top: 20%;
       left: 40%;
       }
 
+      .buttonup{
+              background:url(https://uc037d5ce1b2124a65692246e2e6.previews.dropboxusercontent.com/p/thumb/AAfY5Ttb2OBldZb7lVRHtLSqtetgSPUZykRb99znCOt3JVDOcIYE7lOcyzyUiBlxXz91KkD2QyPDKU9vaTsRrKtwpgt6rDawlagT4oxyLUzE0MtHQm47Mkqzd09QnrI_zDQClzcDI7xoV0bm7nD-LZbH71KcRKbr4sudmOkrpbg90vkQxc-IuBBmdQHn9wB0ycFjn5e26VDmxO-2HIiexZ7_0JBg2Ggo9HT9I7mUn2DUEPIbBcHXn72enKSD6oVW57Ap9cSD8Up-JSr-Q3uAyTzBK3KWxqkEZ28r7jUodNsoI5nTBeSuxygsyJzTLbc2l-kXiTX9PbfPwd-0OAuxh_utWbAMhMqdL02wGKyG2GE7fkme6KmFKLR4ij22gUnikq4/p.png?fv_content=true&size_mode=5);
+              background-repeat:no-repeat;
+              padding: 0;
+              border: none;
+      }
 
+      .buttondown{
+              background:url(https://uca2835d91e404e91556d876e98f.previews.dropboxusercontent.com/p/thumb/AAffSIjo2ZfpH2pgGir8fKJaaFA8bsPsji2BbgIuTCvYYPGH6zv2Srg5yxXAnNh81w93orvZIbuYC07eFJd5mEl3VzN9pU_jQ9sCJ1tUY92JGDyzdruJz_ZSQzQ2-GlbfTRxKaKwEQ8svfEh8GiZ9T1jW0GfN80vCF4MpwuH7tiInbuyKWxRzMURwKu1EyPgT1oaD67ujqxKpmRP_I62Bibp0PkbCxtyjJHkJ17tFj8RkTWD3HGT7QPShHykI7FnQqb-02fSs-VpAOoLwRnP85ai11S7n-BHvS83mbjoMvcanABi0fp3a0czR8Hz6-AgDjq2JgWIPvKHBRK_NWE9lPUueg--nqvksfUktaGVlnghzxB1yYz1NwTmQCl65hcg2iw/p.png?fv_content=true&size_mode=5);
+              background-repeat:no-repeat;
+              padding: 0;
+              border: none;
+      }
+
+      .buttonreset{
+              background:url(https://www.mobafire.com/images/ability/ekko-chronobreak.png);
+              background-repeat:no-repeat;
+              padding: 0;
+              height: 64px;
+              width: 64px;
+      }
     #resetbutton {
       position: absolute;
       top: 15%;
@@ -60,6 +80,7 @@
       letter-spacing: 12px;
       font-size: 40px;
       font-style: normal;
+      font-weight: bold;
     }
     button {
       width:48px;
@@ -402,42 +423,26 @@ Gain +1 team size"
                                                    style="display:none;">
                 </div>
 
-          <div id="button_up">
-                <button onclick="increaseBF(1)" style="background:url(https://uc18aa603dc234b99a960f4c5cbc.previews.dropboxusercontent.com/p/thumb/AAdvaXmdNqkTDKKOOn5HDfNc1s99VyzjQwi1m3y4yZz6jt3QKb_-qDtw9_Jy2K0Vjza2UHT3CIOqz3OQL3W0bsgcCn0lt6L2AaHyY45BK8bZ-EhsHt61ZIthxhxwbuAliobbTllzkimO7EB0rE2rf5p8Gu9JfThbL9Bxuhxs2zGu8EK-uaU-89BNODfMGDgd4olzLvKLr7FwST5wzqHwSYqTtlhGM6u46f9u7RR9yaG2X7uLxbWfdXJrIgICvqAOOuHsxXVSSqzdG7fTVhGq2ge_V5qym7tuoV3jiNUkdICF-A6GowirvX43jz4rDHkcrZUGjZQMANZ3s-VlAJNK7Otn5qZQBJTRI0LTayf1MOaZNziBMIkdGcHj0CyGqeDyozo/p.png?fv_content=true&size_mode=5)" onclick="showIMG()">
-               </button>
-               <button onclick="increaseBF(2)" style="background:url(https://uc18aa603dc234b99a960f4c5cbc.previews.dropboxusercontent.com/p/thumb/AAdvaXmdNqkTDKKOOn5HDfNc1s99VyzjQwi1m3y4yZz6jt3QKb_-qDtw9_Jy2K0Vjza2UHT3CIOqz3OQL3W0bsgcCn0lt6L2AaHyY45BK8bZ-EhsHt61ZIthxhxwbuAliobbTllzkimO7EB0rE2rf5p8Gu9JfThbL9Bxuhxs2zGu8EK-uaU-89BNODfMGDgd4olzLvKLr7FwST5wzqHwSYqTtlhGM6u46f9u7RR9yaG2X7uLxbWfdXJrIgICvqAOOuHsxXVSSqzdG7fTVhGq2ge_V5qym7tuoV3jiNUkdICF-A6GowirvX43jz4rDHkcrZUGjZQMANZ3s-VlAJNK7Otn5qZQBJTRI0LTayf1MOaZNziBMIkdGcHj0CyGqeDyozo/p.png?fv_content=true&size_mode=5)">
-              </button>
-              <button onclick="increaseBF(3)" style="background:url(https://uc18aa603dc234b99a960f4c5cbc.previews.dropboxusercontent.com/p/thumb/AAdvaXmdNqkTDKKOOn5HDfNc1s99VyzjQwi1m3y4yZz6jt3QKb_-qDtw9_Jy2K0Vjza2UHT3CIOqz3OQL3W0bsgcCn0lt6L2AaHyY45BK8bZ-EhsHt61ZIthxhxwbuAliobbTllzkimO7EB0rE2rf5p8Gu9JfThbL9Bxuhxs2zGu8EK-uaU-89BNODfMGDgd4olzLvKLr7FwST5wzqHwSYqTtlhGM6u46f9u7RR9yaG2X7uLxbWfdXJrIgICvqAOOuHsxXVSSqzdG7fTVhGq2ge_V5qym7tuoV3jiNUkdICF-A6GowirvX43jz4rDHkcrZUGjZQMANZ3s-VlAJNK7Otn5qZQBJTRI0LTayf1MOaZNziBMIkdGcHj0CyGqeDyozo/p.png?fv_content=true&size_mode=5)">
-             </button>
-             <button onclick="increaseBF(4)" style="background:url(https://uc18aa603dc234b99a960f4c5cbc.previews.dropboxusercontent.com/p/thumb/AAdvaXmdNqkTDKKOOn5HDfNc1s99VyzjQwi1m3y4yZz6jt3QKb_-qDtw9_Jy2K0Vjza2UHT3CIOqz3OQL3W0bsgcCn0lt6L2AaHyY45BK8bZ-EhsHt61ZIthxhxwbuAliobbTllzkimO7EB0rE2rf5p8Gu9JfThbL9Bxuhxs2zGu8EK-uaU-89BNODfMGDgd4olzLvKLr7FwST5wzqHwSYqTtlhGM6u46f9u7RR9yaG2X7uLxbWfdXJrIgICvqAOOuHsxXVSSqzdG7fTVhGq2ge_V5qym7tuoV3jiNUkdICF-A6GowirvX43jz4rDHkcrZUGjZQMANZ3s-VlAJNK7Otn5qZQBJTRI0LTayf1MOaZNziBMIkdGcHj0CyGqeDyozo/p.png?fv_content=true&size_mode=5)">
-            </button>
-            <button onclick="increaseBF(5)" style="background:url(https://uc18aa603dc234b99a960f4c5cbc.previews.dropboxusercontent.com/p/thumb/AAdvaXmdNqkTDKKOOn5HDfNc1s99VyzjQwi1m3y4yZz6jt3QKb_-qDtw9_Jy2K0Vjza2UHT3CIOqz3OQL3W0bsgcCn0lt6L2AaHyY45BK8bZ-EhsHt61ZIthxhxwbuAliobbTllzkimO7EB0rE2rf5p8Gu9JfThbL9Bxuhxs2zGu8EK-uaU-89BNODfMGDgd4olzLvKLr7FwST5wzqHwSYqTtlhGM6u46f9u7RR9yaG2X7uLxbWfdXJrIgICvqAOOuHsxXVSSqzdG7fTVhGq2ge_V5qym7tuoV3jiNUkdICF-A6GowirvX43jz4rDHkcrZUGjZQMANZ3s-VlAJNK7Otn5qZQBJTRI0LTayf1MOaZNziBMIkdGcHj0CyGqeDyozo/p.png?fv_content=true&size_mode=5)">
-           </button>
-           <button onclick="increaseBF(6)" style="background:url(https://uc18aa603dc234b99a960f4c5cbc.previews.dropboxusercontent.com/p/thumb/AAdvaXmdNqkTDKKOOn5HDfNc1s99VyzjQwi1m3y4yZz6jt3QKb_-qDtw9_Jy2K0Vjza2UHT3CIOqz3OQL3W0bsgcCn0lt6L2AaHyY45BK8bZ-EhsHt61ZIthxhxwbuAliobbTllzkimO7EB0rE2rf5p8Gu9JfThbL9Bxuhxs2zGu8EK-uaU-89BNODfMGDgd4olzLvKLr7FwST5wzqHwSYqTtlhGM6u46f9u7RR9yaG2X7uLxbWfdXJrIgICvqAOOuHsxXVSSqzdG7fTVhGq2ge_V5qym7tuoV3jiNUkdICF-A6GowirvX43jz4rDHkcrZUGjZQMANZ3s-VlAJNK7Otn5qZQBJTRI0LTayf1MOaZNziBMIkdGcHj0CyGqeDyozo/p.png?fv_content=true&size_mode=5)">
-          </button>
-          <button onclick="increaseBF(7)" style="background:url(https://uc18aa603dc234b99a960f4c5cbc.previews.dropboxusercontent.com/p/thumb/AAdvaXmdNqkTDKKOOn5HDfNc1s99VyzjQwi1m3y4yZz6jt3QKb_-qDtw9_Jy2K0Vjza2UHT3CIOqz3OQL3W0bsgcCn0lt6L2AaHyY45BK8bZ-EhsHt61ZIthxhxwbuAliobbTllzkimO7EB0rE2rf5p8Gu9JfThbL9Bxuhxs2zGu8EK-uaU-89BNODfMGDgd4olzLvKLr7FwST5wzqHwSYqTtlhGM6u46f9u7RR9yaG2X7uLxbWfdXJrIgICvqAOOuHsxXVSSqzdG7fTVhGq2ge_V5qym7tuoV3jiNUkdICF-A6GowirvX43jz4rDHkcrZUGjZQMANZ3s-VlAJNK7Otn5qZQBJTRI0LTayf1MOaZNziBMIkdGcHj0CyGqeDyozo/p.png?fv_content=true&size_mode=5)">
-         </button>
-         <button onclick="increaseBF(8)" style="background:url(https://uc18aa603dc234b99a960f4c5cbc.previews.dropboxusercontent.com/p/thumb/AAdvaXmdNqkTDKKOOn5HDfNc1s99VyzjQwi1m3y4yZz6jt3QKb_-qDtw9_Jy2K0Vjza2UHT3CIOqz3OQL3W0bsgcCn0lt6L2AaHyY45BK8bZ-EhsHt61ZIthxhxwbuAliobbTllzkimO7EB0rE2rf5p8Gu9JfThbL9Bxuhxs2zGu8EK-uaU-89BNODfMGDgd4olzLvKLr7FwST5wzqHwSYqTtlhGM6u46f9u7RR9yaG2X7uLxbWfdXJrIgICvqAOOuHsxXVSSqzdG7fTVhGq2ge_V5qym7tuoV3jiNUkdICF-A6GowirvX43jz4rDHkcrZUGjZQMANZ3s-VlAJNK7Otn5qZQBJTRI0LTayf1MOaZNziBMIkdGcHj0CyGqeDyozo/p.png?fv_content=true&size_mode=5)">
-        </button>
+          <div id="buttonuplocation">
+               <button class="buttonup" onclick="increaseBF(1)"></button>
+               <button class="buttonup" onclick="increaseBF(2)"></button>
+               <button class="buttonup" onclick="increaseBF(3)"></button>
+               <button class="buttonup" onclick="increaseBF(4)"></button>
+               <button class="buttonup" onclick="increaseBF(5)"></button>
+               <button class="buttonup" onclick="increaseBF(6)"></button>
+               <button class="buttonup" onclick="increaseBF(7)"></button>
+               <button class="buttonup" onclick="increaseBF(8)"></button>
                 </div>
 
-          <div id="button_down">
-                  <button onclick="decreaseBF(1)" style="background:url(https://uc70b57c4e75c286d4996b10e1d9.previews.dropboxusercontent.com/p/thumb/AAcHGJ7JJkMPMpYQ6a78HcaSwHChMGQR6MT7Gq6j41GCv2PgXOSB-4omM8saLIKySqogBz1vOO43W2TbSzrLUGevcqBblTh3y4dVb74heYYypCnPTFmbkBWK7XmJ-4h07rKfqOrfaNM-ELNkW6dE0n16xxQB6uGvK81kQMy0nTnY4L0aVyB9zaFeJbPk386bMhL2SO-Hfvw69U_daTIKQVB6wtgKEIDJNW2UXL9VJ-oTN0aFoBNJfz0TmWALrVbfDch6wnkjCcwV8j5080ABqdxPv1-dQBSZ3IPqKtVZfGoN0xfuAdcqJJGLIP5DbIVOPyvWbEBR4i8vu3YXmS-D6wlvznlOzGQ1ck6opq0m7y7-HxYVT6JOAQBC_sMiY7zKfdg/p.png?fv_content=true&size_mode=5)">
-                 </button>
-                 <button onclick="decreaseBF(2)" style="background:url(https://uc70b57c4e75c286d4996b10e1d9.previews.dropboxusercontent.com/p/thumb/AAcHGJ7JJkMPMpYQ6a78HcaSwHChMGQR6MT7Gq6j41GCv2PgXOSB-4omM8saLIKySqogBz1vOO43W2TbSzrLUGevcqBblTh3y4dVb74heYYypCnPTFmbkBWK7XmJ-4h07rKfqOrfaNM-ELNkW6dE0n16xxQB6uGvK81kQMy0nTnY4L0aVyB9zaFeJbPk386bMhL2SO-Hfvw69U_daTIKQVB6wtgKEIDJNW2UXL9VJ-oTN0aFoBNJfz0TmWALrVbfDch6wnkjCcwV8j5080ABqdxPv1-dQBSZ3IPqKtVZfGoN0xfuAdcqJJGLIP5DbIVOPyvWbEBR4i8vu3YXmS-D6wlvznlOzGQ1ck6opq0m7y7-HxYVT6JOAQBC_sMiY7zKfdg/p.png?fv_content=true&size_mode=5)">
-                </button>
-                <button onclick="decreaseBF(3)" style="background:url(https://uc70b57c4e75c286d4996b10e1d9.previews.dropboxusercontent.com/p/thumb/AAcHGJ7JJkMPMpYQ6a78HcaSwHChMGQR6MT7Gq6j41GCv2PgXOSB-4omM8saLIKySqogBz1vOO43W2TbSzrLUGevcqBblTh3y4dVb74heYYypCnPTFmbkBWK7XmJ-4h07rKfqOrfaNM-ELNkW6dE0n16xxQB6uGvK81kQMy0nTnY4L0aVyB9zaFeJbPk386bMhL2SO-Hfvw69U_daTIKQVB6wtgKEIDJNW2UXL9VJ-oTN0aFoBNJfz0TmWALrVbfDch6wnkjCcwV8j5080ABqdxPv1-dQBSZ3IPqKtVZfGoN0xfuAdcqJJGLIP5DbIVOPyvWbEBR4i8vu3YXmS-D6wlvznlOzGQ1ck6opq0m7y7-HxYVT6JOAQBC_sMiY7zKfdg/p.png?fv_content=true&size_mode=5)">
-               </button>
-               <button onclick="decreaseBF(4)" style="background:url(https://uc70b57c4e75c286d4996b10e1d9.previews.dropboxusercontent.com/p/thumb/AAcHGJ7JJkMPMpYQ6a78HcaSwHChMGQR6MT7Gq6j41GCv2PgXOSB-4omM8saLIKySqogBz1vOO43W2TbSzrLUGevcqBblTh3y4dVb74heYYypCnPTFmbkBWK7XmJ-4h07rKfqOrfaNM-ELNkW6dE0n16xxQB6uGvK81kQMy0nTnY4L0aVyB9zaFeJbPk386bMhL2SO-Hfvw69U_daTIKQVB6wtgKEIDJNW2UXL9VJ-oTN0aFoBNJfz0TmWALrVbfDch6wnkjCcwV8j5080ABqdxPv1-dQBSZ3IPqKtVZfGoN0xfuAdcqJJGLIP5DbIVOPyvWbEBR4i8vu3YXmS-D6wlvznlOzGQ1ck6opq0m7y7-HxYVT6JOAQBC_sMiY7zKfdg/p.png?fv_content=true&size_mode=5)">
-              </button>
-              <button onclick="decreaseBF(5)" style="background:url(https://uc70b57c4e75c286d4996b10e1d9.previews.dropboxusercontent.com/p/thumb/AAcHGJ7JJkMPMpYQ6a78HcaSwHChMGQR6MT7Gq6j41GCv2PgXOSB-4omM8saLIKySqogBz1vOO43W2TbSzrLUGevcqBblTh3y4dVb74heYYypCnPTFmbkBWK7XmJ-4h07rKfqOrfaNM-ELNkW6dE0n16xxQB6uGvK81kQMy0nTnY4L0aVyB9zaFeJbPk386bMhL2SO-Hfvw69U_daTIKQVB6wtgKEIDJNW2UXL9VJ-oTN0aFoBNJfz0TmWALrVbfDch6wnkjCcwV8j5080ABqdxPv1-dQBSZ3IPqKtVZfGoN0xfuAdcqJJGLIP5DbIVOPyvWbEBR4i8vu3YXmS-D6wlvznlOzGQ1ck6opq0m7y7-HxYVT6JOAQBC_sMiY7zKfdg/p.png?fv_content=true&size_mode=5)">
-             </button>
-             <button onclick="decreaseBF(6)" style="background:url(https://uc70b57c4e75c286d4996b10e1d9.previews.dropboxusercontent.com/p/thumb/AAcHGJ7JJkMPMpYQ6a78HcaSwHChMGQR6MT7Gq6j41GCv2PgXOSB-4omM8saLIKySqogBz1vOO43W2TbSzrLUGevcqBblTh3y4dVb74heYYypCnPTFmbkBWK7XmJ-4h07rKfqOrfaNM-ELNkW6dE0n16xxQB6uGvK81kQMy0nTnY4L0aVyB9zaFeJbPk386bMhL2SO-Hfvw69U_daTIKQVB6wtgKEIDJNW2UXL9VJ-oTN0aFoBNJfz0TmWALrVbfDch6wnkjCcwV8j5080ABqdxPv1-dQBSZ3IPqKtVZfGoN0xfuAdcqJJGLIP5DbIVOPyvWbEBR4i8vu3YXmS-D6wlvznlOzGQ1ck6opq0m7y7-HxYVT6JOAQBC_sMiY7zKfdg/p.png?fv_content=true&size_mode=5)">
-            </button>
-            <button onclick="decreaseBF(7)" style="background:url(https://uc70b57c4e75c286d4996b10e1d9.previews.dropboxusercontent.com/p/thumb/AAcHGJ7JJkMPMpYQ6a78HcaSwHChMGQR6MT7Gq6j41GCv2PgXOSB-4omM8saLIKySqogBz1vOO43W2TbSzrLUGevcqBblTh3y4dVb74heYYypCnPTFmbkBWK7XmJ-4h07rKfqOrfaNM-ELNkW6dE0n16xxQB6uGvK81kQMy0nTnY4L0aVyB9zaFeJbPk386bMhL2SO-Hfvw69U_daTIKQVB6wtgKEIDJNW2UXL9VJ-oTN0aFoBNJfz0TmWALrVbfDch6wnkjCcwV8j5080ABqdxPv1-dQBSZ3IPqKtVZfGoN0xfuAdcqJJGLIP5DbIVOPyvWbEBR4i8vu3YXmS-D6wlvznlOzGQ1ck6opq0m7y7-HxYVT6JOAQBC_sMiY7zKfdg/p.png?fv_content=true&size_mode=5)">
-           </button>
-           <button onclick="decreaseBF(8)" style="background:url(https://uc70b57c4e75c286d4996b10e1d9.previews.dropboxusercontent.com/p/thumb/AAcHGJ7JJkMPMpYQ6a78HcaSwHChMGQR6MT7Gq6j41GCv2PgXOSB-4omM8saLIKySqogBz1vOO43W2TbSzrLUGevcqBblTh3y4dVb74heYYypCnPTFmbkBWK7XmJ-4h07rKfqOrfaNM-ELNkW6dE0n16xxQB6uGvK81kQMy0nTnY4L0aVyB9zaFeJbPk386bMhL2SO-Hfvw69U_daTIKQVB6wtgKEIDJNW2UXL9VJ-oTN0aFoBNJfz0TmWALrVbfDch6wnkjCcwV8j5080ABqdxPv1-dQBSZ3IPqKtVZfGoN0xfuAdcqJJGLIP5DbIVOPyvWbEBR4i8vu3YXmS-D6wlvznlOzGQ1ck6opq0m7y7-HxYVT6JOAQBC_sMiY7zKfdg/p.png?fv_content=true&size_mode=5)">
-          </button>
+          <div id="buttondownlocation">
+            <button class="buttondown" onclick="increaseBF(1)"></button>
+            <button class="buttondown" onclick="increaseBF(2)"></button>
+            <button class="buttondown" onclick="increaseBF(3)"></button>
+            <button class="buttondown" onclick="increaseBF(4)"></button>
+            <button class="buttondown" onclick="increaseBF(5)"></button>
+            <button class="buttondown" onclick="increaseBF(6)"></button>
+            <button class="buttondown" onclick="increaseBF(7)"></button>
+            <button class="buttondown" onclick="increaseBF(8)"></button>
           </div>
 
           <script>
@@ -554,7 +559,7 @@ Gain +1 team size"
           </script>
 <!-- asjdhfgahjsdgfjasdgfashkdgfjkashdgf -->
         <div id="resetbutton">
-        <button onclick="reset()">reset</button>
+        <button class="buttonreset" onclick="reset()"></button>
         <p id="reset"></p>
       </div>
 
