@@ -459,6 +459,9 @@ Gain +1 team size"
               var startIND2 = ((n*(n-1))/2);
               k = n-1;
               for(i = startIND; i<36;i+=k){
+                if(diagInd.indexOf(i) >= 0){
+                  recipeChart[n]++;
+                  }
                   chart[i]++;
                   k++;
               }
@@ -472,6 +475,9 @@ Gain +1 team size"
               var startIND2 = ((n*(n-1))/2);
               k = n-1;
               for(i = startIND; i<36;i+=k){
+                if(diagInd.indexOf(i) >= 0){
+                  recipeChart[n]--;
+                  }
                 chart[i]--;
                 k++;
               }
@@ -505,11 +511,11 @@ Gain +1 team size"
 
             function subtester(x){
               if(diagInd.indexOf(x) >= 0){
-                if(chart[x] < 4){
+                if(chart[x] < 2){
                   closeIMG(names[x]);
                 }
               }
-              else if(chart[x] < 2){
+              else if(chart[x] <= 2){
                   closeIMG(names[x]);
               }
             }
