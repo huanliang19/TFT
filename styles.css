@@ -2,12 +2,16 @@
   position: absolute;
   top: 15%;
   left: 40%;
+  width: 100%
+  height: auto;
 }
 
 #complete_items {
   position: absolute;
   top: 40%;
   left: 10%;
+  width: 100%
+  height: auto;
   display: flex;
 }
 
@@ -38,6 +42,8 @@
   background-repeat: no-repeat;
   padding: 0;
   border: none;
+  width: 100%
+  height: auto;
 }
 
 .buttondown {
@@ -45,14 +51,16 @@
   background-repeat: no-repeat;
   padding: 0;
   border: none;
+  width: 100%
+  height: auto;
 }
 
 .buttonreset {
   background: url(https://www.mobafire.com/images/ability/ekko-chronobreak.png);
   background-repeat: no-repeat;
   padding: 0;
-  height: 64px;
   width: 64px;
+  height: 64px;
 }
 
 #resetbutton {
