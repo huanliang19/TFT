@@ -14,7 +14,7 @@
 #table {
   position: absolute;
   top: 0%;
-  left: 0%;
+  left: 81%;
   display: flex;
   object-fit: contain;
 }
