@@ -1,549 +1,347 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Forgot the builds? get em here!">
-    <meta name="author" content="Huan">
-    <meta name="keywords" content="HTML, TFT">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SpicyShrimpChip's TFT tool</title>
-    <style>
-      body  {
-        background-image: url("https://s1.ibtimes.com/sites/www.ibtimes.com/files/styles/embed/public/2019/05/14/battle-principal-yuumi-league-legends-riot-games.jpg");
-        background-color: #cccccc;
-      }
-    </style>
-  </head>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Forgot the builds? get em here!">
+  <meta name="author" content="Huan">
+  <meta name="keywords" content="HTML, TFT">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SpicyShrimpChip's TFT tool</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
 
 
 
-  <body style="background-color:black;">
+<body style="background-color:black;">
 
-    <style>
-    #recipe_items {
-      position: absolute;
-      top: 15%;
-      left: 40%;
-      }
-    #complete_items {
-      position: absolute;
-      top: 35%;
-      left: 10%;
-      display: flex;
-      }
-    #table {
-      position: absolute;
-      top: 46%;
-      left: 73%;
-      display: flex;
-      }
-    #buttonuplocation {
-      position: absolute;
-      top: 12%;
-      left: 40%;
-      }
-    #buttondownlocation {
-      position: absolute;
-      top: 20%;
-      left: 40%;
-      }
-      .buttonup{
-              background:url(https://uc037d5ce1b2124a65692246e2e6.previews.dropboxusercontent.com/p/thumb/AAfY5Ttb2OBldZb7lVRHtLSqtetgSPUZykRb99znCOt3JVDOcIYE7lOcyzyUiBlxXz91KkD2QyPDKU9vaTsRrKtwpgt6rDawlagT4oxyLUzE0MtHQm47Mkqzd09QnrI_zDQClzcDI7xoV0bm7nD-LZbH71KcRKbr4sudmOkrpbg90vkQxc-IuBBmdQHn9wB0ycFjn5e26VDmxO-2HIiexZ7_0JBg2Ggo9HT9I7mUn2DUEPIbBcHXn72enKSD6oVW57Ap9cSD8Up-JSr-Q3uAyTzBK3KWxqkEZ28r7jUodNsoI5nTBeSuxygsyJzTLbc2l-kXiTX9PbfPwd-0OAuxh_utWbAMhMqdL02wGKyG2GE7fkme6KmFKLR4ij22gUnikq4/p.png?fv_content=true&size_mode=5);
-              background-repeat:no-repeat;
-              padding: 0;
-              border: none;
-      }
-      .buttondown{
-              background:url(https://uca2835d91e404e91556d876e98f.previews.dropboxusercontent.com/p/thumb/AAffSIjo2ZfpH2pgGir8fKJaaFA8bsPsji2BbgIuTCvYYPGH6zv2Srg5yxXAnNh81w93orvZIbuYC07eFJd5mEl3VzN9pU_jQ9sCJ1tUY92JGDyzdruJz_ZSQzQ2-GlbfTRxKaKwEQ8svfEh8GiZ9T1jW0GfN80vCF4MpwuH7tiInbuyKWxRzMURwKu1EyPgT1oaD67ujqxKpmRP_I62Bibp0PkbCxtyjJHkJ17tFj8RkTWD3HGT7QPShHykI7FnQqb-02fSs-VpAOoLwRnP85ai11S7n-BHvS83mbjoMvcanABi0fp3a0czR8Hz6-AgDjq2JgWIPvKHBRK_NWE9lPUueg--nqvksfUktaGVlnghzxB1yYz1NwTmQCl65hcg2iw/p.png?fv_content=true&size_mode=5);
-              background-repeat:no-repeat;
-              padding: 0;
-              border: none;
-      }
-      .buttonreset{
-              background:url(https://www.mobafire.com/images/ability/ekko-chronobreak.png);
-              background-repeat:no-repeat;
-              padding: 0;
-              height: 64px;
-              width: 64px;
-      }
-    #resetbutton {
-      position: absolute;
-      top: 15%;
-      left: 35%;
-      display: flex;
-      }
-    #count{
-      position: absolute;
-      top: 18%;
-      left: 40%;
-      letter-spacing: 12px;
-      font-size: 40px;
-      font-style: normal;
-      font-weight: bold;
-    }
-    button {
-      width:48px;
-      height:30px;
-      }
-    </style>
+  <div id="recipe_items">
+    <img src="http://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/1038.png" alt="B.F. Sword" data-item-id="1" width="48" title="B.F. Sword
++20 Attack Damage" data-tooltip-url="https://lolchess.gg/tooltip/item/1">
+    <img src="http://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/1043.png" alt="Recurve Bow" data-item-id="2" width="48" title="Recurve Bow
++15% Attack Speed" data-tooltip-url="https://lolchess.gg/tooltip/item/2">
+    <img src="http://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/1031.png" alt="Chain Vest" data-item-id="3" width="48" title="Chain Vest
++20 Armor" data-tooltip-url="https://lolchess.gg/tooltip/item/3">
+    <img src="http://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/1057.png" alt="Negatron Cloak" data-item-id="4" width="48" title="Negatron Cloak
++20 Magic Resist" data-tooltip-url="https://lolchess.gg/tooltip/item/4">
+    <img src="http://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/1058.png" alt="Needlessly Large Rod" data-item-id="5" width="48" title="Needlessly Large Rod
++20% Spell Damage" data-tooltip-url="https://lolchess.gg/tooltip/item/5">
+    <img src="http://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3070.png" alt="Tear of the Goddess" data-item-id="6" width="48" title="Tear of the Goddess
++20 starting mana" data-tooltip-url="https://lolchess.gg/tooltip/item/6">
+    <img src="http://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/1011.png" alt="Giant's Belt" data-item-id="7" width="48" title="Giant's Belt
++200 Health" data-tooltip-url="https://lolchess.gg/tooltip/item/7">
+    <img src="http://static.lolchess.gg/images/tft/item/Spatula.png" alt="Spatula" data-item-id="8" width="48" title="Spatula
+You will get a special ability" data-tooltip-url="https://lolchess.gg/tooltip/item/8">
+  </div>
 
-    <div id="recipe_items">
-          <img src="http://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/1038.png" alt="B.F. Sword" data-item-id="1"
-           width="48"
-           title="B.F. Sword
-+20 Attack Damage"
-           data-tooltip-url="https://lolchess.gg/tooltip/item/1">
-           <img src="http://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/1043.png" alt="Recurve Bow" data-item-id="2"
-           width="48"
-           title="Recurve Bow
-+15% Attack Speed"
-           data-tooltip-url="https://lolchess.gg/tooltip/item/2">
-           <img src="http://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/1031.png" alt="Chain Vest" data-item-id="3"
-           width="48"
-           title="Chain Vest
-+20 Armor"
-           data-tooltip-url="https://lolchess.gg/tooltip/item/3">
-           <img src="http://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/1057.png" alt="Negatron Cloak" data-item-id="4"
-           width="48"
-           title="Negatron Cloak
-+20 Magic Resist"
-           data-tooltip-url="https://lolchess.gg/tooltip/item/4">
-           <img src="http://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/1058.png" alt="Needlessly Large Rod" data-item-id="5"
-           width="48"
-           title="Needlessly Large Rod
-+20% Spell Damage"
-           data-tooltip-url="https://lolchess.gg/tooltip/item/5">
-           <img src="http://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3070.png" alt="Tear of the Goddess" data-item-id="6"
-           width="48"
-           title="Tear of the Goddess
-+20 starting mana"
-           data-tooltip-url="https://lolchess.gg/tooltip/item/6">
-           <img src="http://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/1011.png" alt="Giant's Belt" data-item-id="7"
-           width="48"
-           title="Giant's Belt
-+200 Health"
-           data-tooltip-url="https://lolchess.gg/tooltip/item/7">
-           <img src="http://static.lolchess.gg/images/tft/item/Spatula.png" alt="Spatula" data-item-id="8"
-           width="48"
-           title="Spatula
-You will get a special ability"
-           data-tooltip-url="https://lolchess.gg/tooltip/item/8">
-          </div>
-
-          <div id="complete_items">
-                <img src="http://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3031.png" img id="InfinityEdge" alt="InfinityEdge" data-item-id="9"
-                 width="48"
-                 title="Infinity Edge
+  <div id="complete_items">
+    <img src="http://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3031.png" img id="InfinityEdge" alt="InfinityEdge" data-item-id="9" width="48" title="Infinity Edge
 Critical Strikes deal +100% damage
 +20 Attack Damage
-+20 Attack Damage"
-                 style="display:none;">
-                 <img src="https://static.lolchess.gg/images/tft/item/SwordOfTheDivine.png" img id="SwordoftheDivine" alt="SwordoftheDivine" data-item-id="10"
-                  width="48"
-                  title="Sword of the Divine
++20 Attack Damage" style="display:none;" onclick="decreaseBF(1);decreaseBF(1);">
+    <img src="https://static.lolchess.gg/images/tft/item/SwordOfTheDivine.png" img id="SwordoftheDivine" alt="SwordoftheDivine" data-item-id="10" width="48" title="Sword of the Divine
 Each second, the wearer has a 5% chance to gain 100% Critical Strike
 +20 Attack Damage
-+15% Attack Speed"
-                  style="display:none;">
-                  <img src="https://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3094.png" img id="RapidFireCannon" alt="RapidFireCannon" data-item-id="11"
-                   width="48"
-                   title="Rapid Firecannon
++15% Attack Speed" style="display:none;" onclick="decreaseBF(2);decreaseBF(1);">
+    <img src="https://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3094.png" img id="RapidFireCannon" alt="RapidFireCannon" data-item-id="11" width="48" title="Rapid Firecannon
 Wearer's attacks cannot be dodged. Attack Range is doubled
 +15% Attack Speed
-+15% Attack Speed"
-                   style="display:none;">
-                   <img src="https://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3026.png" img id="GuardianAngels" alt="GuardianAngels" data-item-id="12"
-                    width="48"
-                    title="Guardian Angel
++15% Attack Speed" style="display:none;" onclick="decreaseBF(2);decreaseBF(2);">
+    <img src="https://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3026.png" img id="GuardianAngels" alt="GuardianAngels" data-item-id="12" width="48" title="Guardian Angel
 Wearer revives with 500 HP
 +20 Attack Damage
-+20 Armor"
-                    style="display:none;">
-                    <img src="https://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3046.png" img id="PhantomDancer" alt="PhantomDancer" data-item-id="13"
-                     width="48"
-                     title="Phantom Dancer
++20 Armor" style="display:none;" onclick="decreaseBF(3);decreaseBF(1);">
+    <img src="https://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3046.png" img id="PhantomDancer" alt="PhantomDancer" data-item-id="13" width="48" title="Phantom Dancer
 Wearer dodges all Critical Strikes
 +15% Attack Speed
-+20 Armor"
-                     style="display:none;">
-                     <img src="https://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3075.png" img id="Thornmail" alt="Thornmail" data-item-id="14"
-                      width="48"
-                      title="Thornmail
++20 Armor" style="display:none;" onclick="decreaseBF(3);decreaseBF(2);">
+    <img src="https://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3075.png" img id="Thornmail" alt="Thornmail" data-item-id="14" width="48" title="Thornmail
 Reflect 35% of damage taken from attacks
 +20 Armor
-+20 Armor"
-                      style="display:none;">
-                      <img src="https://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3072.png" img id="BloodThirster" alt="BloodThirster" data-item-id="15"
-                       width="48"
-                       title="The Bloodthirster
++20 Armor" style="display:none;" onclick="decreaseBF(3);decreaseBF(3);">
+    <img src="https://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3072.png" img id="BloodThirster" alt="BloodThirster" data-item-id="15" width="48" title="The Bloodthirster
 Attacks heal for 50% of damage
 +20 Attack Damage
-+20 Magic Resist"
-                       style="display:none;">
-                       <img src="https://static.lolchess.gg/images/tft/item/CursedBlade.png" img id="CursedBlade" alt="CursedBlade" data-item-id="16"
-                        width="48"
-                        title="Cursed Blade
++20 Magic Resist" style="display:none;" onclick="decreaseBF(4);decreaseBF(1);">
+    <img src="https://static.lolchess.gg/images/tft/item/CursedBlade.png" img id="CursedBlade" alt="CursedBlade" data-item-id="16" width="48" title="Cursed Blade
 Attacks have a low chance to shrink (Reduce enemy's star level by 1)
 +15% Attack Speed
-+20 Magic Resist"
-                        style="display:none;">
-                       <img src="https://static.lolchess.gg/images/tft/item/SwordBreaker.png" img id="SwordBreaker" alt="SwordBreaker" data-item-id="17"
-                        width="48"
-                        title="Sword Breaker
++20 Magic Resist" style="display:none;" onclick="decreaseBF(4);decreaseBF(2);">
+    <img src="https://static.lolchess.gg/images/tft/item/SwordBreaker.png" img id="SwordBreaker" alt="SwordBreaker" data-item-id="17" width="48" title="Sword Breaker
 Attacks have a chance to disarm
 +20 Armor
-+20 Magic Resist"
-                        style="display:none;">
-                        <img src="https://static.lolchess.gg/images/tft/item/DragonsClaw.png" img id="DragonsClaw" alt="DragonsClaw" data-item-id="18"
-                         width="48"
-                         title="Dragon's Claw
++20 Magic Resist" style="display:none;" onclick="decreaseBF(4);decreaseBF(3);">
+    <img src="https://static.lolchess.gg/images/tft/item/DragonsClaw.png" img id="DragonsClaw" alt="DragonsClaw" data-item-id="18" width="48" title="Dragon's Claw
 Gain 83% resistance to magic damage
 +20 Magic Resist
-+20 Magic Resist"
-                         style="display:none;">
-                         <img src="https://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3146.png" img id="HextechGunblade" alt="HextechGunblade" data-item-id="19"
-                          width="48"
-                          title="Hextech Gunblade
++20 Magic Resist" style="display:none;" onclick="decreaseBF(4);decreaseBF(4);">
+    <img src="https://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3146.png" img id="HextechGunblade" alt="HextechGunblade" data-item-id="19" width="48" title="Hextech Gunblade
 Heal for 25% of all damage dealt
 +20 Attack Damage
-+20% Spell Damage"
-                          style="display:none;">
-                          <img src="https://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3124.png" img id="GuinsoosRageBlade" alt="GuinsoosRageBlade" data-item-id="20"
-                           width="48"
-                           title="Guinsoo's Rageblade
++20% Spell Damage" style="display:none;" onclick="decreaseBF(5);decreaseBF(1);">
+    <img src="https://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3124.png" img id="GuinsoosRageBlade" alt="GuinsoosRageBlade" data-item-id="20" width="48" title="Guinsoo's Rageblade
 Attack grant 3% Attack Speed. Stacks infinitely.
 +15% Attack Speed
-+20% Spell Damage"
-                           style="display:none;">
-                           <img src="https://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3190.png" img id="LocketoftheIronSoliari" alt="LocketoftheIronSoliari" data-item-id="21"
-                            width="48"
-                            title="Locket of the Iron Solari
++20% Spell Damage" style="display:none;" onclick="decreaseBF(5);decreaseBF(2);">
+    <img src="https://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3190.png" img id="LocketoftheIronSoliari" alt="LocketoftheIronSoliari" data-item-id="21" width="48" title="Locket of the Iron Solari
 On start of combat, all adjacent allies gain a shield of 200
 +20 Armor
-+20% Spell Damage"
-                            style="display:none;">
-                            <img src="https://static.lolchess.gg/images/tft/item/IonicSpark.png" img id="IonicSpark" alt="IonicSpark" data-item-id="22"
-                             width="48"
-                             title="Ionic Spark
++20% Spell Damage" style="display:none;" onclick="decreaseBF(5);decreaseBF(3);">
+    <img src="https://static.lolchess.gg/images/tft/item/IonicSpark.png" img id="IonicSpark" alt="IonicSpark" data-item-id="22" width="48" title="Ionic Spark
 Whenever an enemy casts a spell, they take 200 damage
 +20 Magic Resist
-+20% Spell Damage"
-                             style="display:none;">
-                             <img src="https://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3089.png" img id="RabadonsDeathcap" alt="RabadonsDeathcap" data-item-id="23"
-                              width="48"
-                              title="Rabadon's Deathcap
++20% Spell Damage" style="display:none;" onclick="decreaseBF(5);decreaseBF(4);">
+    <img src="https://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3089.png" img id="RabadonsDeathcap" alt="RabadonsDeathcap" data-item-id="23" width="48" title="Rabadon's Deathcap
 Wearer's Spell Damage stat is amplified by 50%
 +20% Spell Damage
-+20% Spell Damage"
-                              style="display:none;">
-                              <img src="https://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3161.png" img id="SpearofShojin" alt="SpearofShojin" data-item-id="24"
-                               width="48"
-                               title="Spear of Shojin
++20% Spell Damage" style="display:none;" onclick="decreaseBF(5);decreaseBF(5);">
+    <img src="https://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3161.png" img id="SpearofShojin" alt="SpearofShojin" data-item-id="24" width="48" title="Spear of Shojin
 After casting wearer gains 15% of its max mana per attack
 +20 Attack Damage
-+20 starting mana"
-                               style="display:none;">
-                               <img src="https://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3087.png" img id="StaticShiv" alt="StaticShiv" data-item-id="25"
-                                width="48"
-                                title="Statikk Shiv
++20 starting mana" style="display:none;" onclick="decreaseBF(6);decreaseBF(1);">
+    <img src="https://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3087.png" img id="StaticShiv" alt="StaticShiv" data-item-id="25" width="48" title="Statikk Shiv
 Every 3rd attack deals 100 splash magical damage
 +15% Attack Speed
-+20 starting mana"
-                                style="display:none;">
-                                <img src="https://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3110.png" img id="FrozenHeart" alt="FrozenHeart" data-item-id="26"
-                                 width="48"
-                                 title="Frozen Heart
++20 starting mana" style="display:none;" onclick="decreaseBF(6);decreaseBF(2);">
+    <img src="https://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3110.png" img id="FrozenHeart" alt="FrozenHeart" data-item-id="26" width="48" title="Frozen Heart
 Adjacent enemies lost 20% Attack Speed.
 +20 Armor
-+20 starting mana"
-                                 style="display:none;">
-                                 <img src="https://static.lolchess.gg/images/tft/item/Hush.png" img id="Hush" alt="Hush" data-item-id="27"
-                                  width="48"
-                                  title="Hush
++20 starting mana" style="display:none;" onclick="decreaseBF(6);decreaseBF(3);">
+    <img src="https://static.lolchess.gg/images/tft/item/Hush.png" img id="Hush" alt="Hush" data-item-id="27" width="48" title="Hush
 Attacks have a high chance to Silence
 +20 Magic Resist
-+20 starting mana"
-                                  style="display:none;">
-                                  <img src="https://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3285.png" img id="LudensEcho" alt="LudensEcho" data-item-id="28"
-                                   width="48"
-                                   title="Luden's Echo
++20 starting mana" style="display:none;" onclick="decreaseBF(6);decreaseBF(4);">
+    <img src="https://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3285.png" img id="LudensEcho" alt="LudensEcho" data-item-id="28" width="48" title="Luden's Echo
 Spells deal 200 splash damage on hit
 +20% Spell Damage
-+20 starting mana"
-                                   style="display:none;">
-                                   <img src="https://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3040.png" img id="SeraphsEmbrace" alt="SeraphsEmbrace" data-item-id="29"
-                                    width="48"
-                                    title="Seraph's Embrace
++20 starting mana" style="display:none;" onclick="decreaseBF(6);decreaseBF(5);">
+    <img src="https://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3040.png" img id="SeraphsEmbrace" alt="SeraphsEmbrace" data-item-id="29" width="48" title="Seraph's Embrace
 Regain 20 mana each time a spell is cast
 +20 starting mana
 +20 starting mana
-Tear of the Goddess  Tear of the Goddess"
-                                    style="display:none;">
-                                    <img src="https://static.lolchess.gg/images/tft/item/ZekesHerald.png" img id="ZekesHerald" alt="ZekesHerald" data-item-id="30"
-                                     width="48"
-                                     title="Zeke's Herald
+Tear of the Goddess  Tear of the Goddess" style="display:none;" onclick="decreaseBF(6);decreaseBF(6);">
+    <img src="https://static.lolchess.gg/images/tft/item/ZekesHerald.png" img id="ZekesHerald" alt="ZekesHerald" data-item-id="30" width="48" title="Zeke's Herald
 Adjacent allies gain 10% Attack Speed.
 +20 Attack Damage
-+200 Health"
-                                     style="display:none;">
-                                     <img src="https://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3748.png" img id="TitanicHydra" alt="TitanicHydra" data-item-id="31"
-                                      width="48"
-                                      title="Titanic Hydra
++200 Health" style="display:none;" onclick="decreaseBF(7);decreaseBF(1);">
+    <img src="https://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3748.png" img id="TitanicHydra" alt="TitanicHydra" data-item-id="31" width="48" title="Titanic Hydra
 Attacks deal 10% of the wearer's max Health as splash damage
 +15% Attack Speed
-+200 Health"
-                                      style="display:none;">
-                                      <img src="https://static.lolchess.gg/images/tft/item/RedBuff.png" img id="RedBuff" alt="RedBuff" data-item-id="32"
-                                       width="48"
-                                       title="Red Buff
++200 Health" style="display:none;" onclick="decreaseBF(7);decreaseBF(2);">
+    <img src="https://static.lolchess.gg/images/tft/item/RedBuff.png" img id="RedBuff" alt="RedBuff" data-item-id="32" width="48" title="Red Buff
 Attacks deal 2.5% burn damage
 +20 Armor
-+200 Health"
-                                       style="display:none;">
-                                       <img src="https://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3172.png" img id="Zephyr" alt="Zephyr" data-item-id="33"
-                                        width="48"
-                                        title="Zephyr
++200 Health" style="display:none;" onclick="decreaseBF(7);decreaseBF(3);">
+    <img src="https://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3172.png" img id="Zephyr" alt="Zephyr" data-item-id="33" width="48" title="Zephyr
 On start of combat, banish an enemy for 5 seconds
 +20 Magic Resist
-+200 Health"
-                                        style="display:none;">
-                                        <img src="https://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3165.png" img id="Morellonomicon" alt="Morellonomicon" data-item-id="34"
-                                         width="48"
-                                         title="Morellonomicon
++200 Health" style="display:none;" onclick="decreaseBF(7);decreaseBF(4);">
+    <img src="https://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3165.png" img id="Morellonomicon" alt="Morellonomicon" data-item-id="34" width="48" title="Morellonomicon
 Spells deal burn damage equal to 5% of the enemy's maximum health per second
 +20% Spell Damage
-+200 Health"
-                                         style="display:none;">
-                                         <img src="https://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3107.png" img id="Redemption" alt="Redemption" data-item-id="35"
-                                          width="48"
-                                          title="Redemption
++200 Health" style="display:none;" onclick="decreaseBF(7);decreaseBF(5);">
+    <img src="https://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3107.png" img id="Redemption" alt="Redemption" data-item-id="35" width="48" title="Redemption
 On death, heal all nearby allies for 1000 Health
 +20 starting mana
-+200 Health"
-                                          style="display:none;">
-                                          <img src="https://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3083.png" img id="WarmogsArmor" alt="WarmogsArmor" data-item-id="36"
-                                           width="48"
-                                           title="Warmog's Armor
++200 Health" style="display:none;" onclick="decreaseBF(7);decreaseBF(6);">
+    <img src="https://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3083.png" img id="WarmogsArmor" alt="WarmogsArmor" data-item-id="36" width="48" title="Warmog's Armor
 Wearer regenerates 3% max Health per second
 +200 Health
-+200 Health"
-                                           style="display:none;">
-                                           <img src="https://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3142.png" img id="YoumuusGhostBlade" alt="YoumuusGhostBlade" data-item-id="37"
-                                            width="48"
-                                            title="Youmuu's Ghostblade
++200 Health" style="display:none;" onclick="decreaseBF(7);decreaseBF(7);">
+    <img src="https://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3142.png" img id="YoumuusGhostBlade" alt="YoumuusGhostBlade" data-item-id="37" width="48" title="Youmuu's Ghostblade
 Wearer is also an Assassin
-+20 Attack Damage"
-                                            style="display:none;">
-                                            <img src="https://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3153.png" img id="BladeoftheRuinedKing" alt="BladeoftheRuinedKing" data-item-id="38"
-                                             width="48"
-                                             title="Blade of the Ruined King
++20 Attack Damage" style="display:none;" onclick="decreaseBF(8);decreaseBF(1);">
+    <img src="https://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3153.png" img id="BladeoftheRuinedKing" alt="BladeoftheRuinedKing" data-item-id="38" width="48" title="Blade of the Ruined King
 Wearer is also a Blademaster
-+15% Attack Speed"
-                                             style="display:none;">
-                                             <img src="https://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3109.png" img id="KnightsVow" alt="KnightsVow" data-item-id="39"
-                                              width="48"
-                                              title="Knight's Vow
++15% Attack Speed" style="display:none;" onclick="decreaseBF(8);decreaseBF(2);">
+    <img src="https://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3109.png" img id="KnightsVow" alt="KnightsVow" data-item-id="39" width="48" title="Knight's Vow
 Wearer is also a Knight
-+20 Armor"
-                                              style="display:none;">
-                                              <img src="https://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3085.png" img id="RunaansHurricane" alt="RunaansHurricane" data-item-id="40"
-                                               width="48"
-                                               title="Runaan's Hurricane
++20 Armor" style="display:none;" onclick="decreaseBF(8);decreaseBF(3);">
+    <img src="https://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3085.png" img id="RunaansHurricane" alt="RunaansHurricane" data-item-id="40" width="48" title="Runaan's Hurricane
 Attack target 2 additional enemies. These additional attacks deal 50% damage
-+20 Magic Resist"
-                                               style="display:none;">
-                                               <img src="https://static.lolchess.gg/images/tft/item/Yuumi.png" img id="Yuumi" alt="Yuumi" data-item-id="41"
-                                                width="48"
-                                                title="Yuumi
++20 Magic Resist" style="display:none;" onclick="decreaseBF(8);decreaseBF(4);">
+    <img src="https://static.lolchess.gg/images/tft/item/Yuumi.png" img id="Yuumi" alt="Yuumi" data-item-id="41" width="48" title="Yuumi
 Wearer is also a Sorcerer
-+20% Spell Damage"
-                                                style="display:none;">
-                                                <img src="https://static.lolchess.gg/images/tft/item/Aatrox.png" img id="Darkin" alt="Darkin" data-item-id="42"
-                                                 width="48"
-                                                 title="Darkin
++20% Spell Damage" style="display:none;" onclick="decreaseBF(8);decreaseBF(5);">
+    <img src="https://static.lolchess.gg/images/tft/item/Aatrox.png" img id="Darkin" alt="Darkin" data-item-id="42" width="48" title="Darkin
 Wearer is also a Demon
 +20 starting mana
-"
-                                                 style="display:none;">
-                                                 <img src="https://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3022.png" img id="FrozenMallet" alt="FrozenMallet" data-item-id="43"
-                                                  width="48"
-                                                  title="Frozen Mallet
+" style="display:none;" onclick="decreaseBF(8);decreaseBF(6);">
+    <img src="https://ddragon.leagueoflegends.com/cdn/9.12.1/img/item/3022.png" img id="FrozenMallet" alt="FrozenMallet" data-item-id="43" width="48" title="Frozen Mallet
 Wearer is also a Glacial
-+200 Health"
-                                                  style="display:none;">
-                                                  <img src="https://static.lolchess.gg/images/tft/item/ForceOfNature.png" img id="ForceofNature" alt="ForceofNature" data-item-id="44"
-                                                   width="48"
-                                                   title="Force of Nature
-Gain +1 team size"
-                                                   style="display:none;">
-                </div>
++200 Health" style="display:none;" onclick="decreaseBF(8);decreaseBF(7);">
+    <img src="https://static.lolchess.gg/images/tft/item/ForceOfNature.png" img id="ForceofNature" alt="ForceofNature" data-item-id="44" width="48" title="Force of Nature
+Gain +1 team size" style="display:none;" onclick="decreaseBF(8);decreaseBF(8);">
+  </div>
 
-                <div id="table">
-                  <img src="https://i.redd.it/td0b5358wk531.jpg" width="480">
-                </div>
+  <div id="table">
+    <img src="https://i.redd.it/td0b5358wk531.jpg" width="480">
+  </div>
 
-          <div id="buttonuplocation">
-               <button class="buttonup" onclick="increaseBF(1)"></button>
-               <button class="buttonup" onclick="increaseBF(2)"></button>
-               <button class="buttonup" onclick="increaseBF(3)"></button>
-               <button class="buttonup" onclick="increaseBF(4)"></button>
-               <button class="buttonup" onclick="increaseBF(5)"></button>
-               <button class="buttonup" onclick="increaseBF(6)"></button>
-               <button class="buttonup" onclick="increaseBF(7)"></button>
-               <button class="buttonup" onclick="increaseBF(8)"></button>
-                </div>
+  <div id="buttonuplocation">
+    <button class="buttonup" onclick="increaseBF(1)"></button>
+    <button class="buttonup" onclick="increaseBF(2)"></button>
+    <button class="buttonup" onclick="increaseBF(3)"></button>
+    <button class="buttonup" onclick="increaseBF(4)"></button>
+    <button class="buttonup" onclick="increaseBF(5)"></button>
+    <button class="buttonup" onclick="increaseBF(6)"></button>
+    <button class="buttonup" onclick="increaseBF(7)"></button>
+    <button class="buttonup" onclick="increaseBF(8)"></button>
+  </div>
 
-          <div id="buttondownlocation">
-            <button class="buttondown" onclick="decreaseBF(1)"></button>
-            <button class="buttondown" onclick="decreaseBF(2)"></button>
-            <button class="buttondown" onclick="decreaseBF(3)"></button>
-            <button class="buttondown" onclick="decreaseBF(4)"></button>
-            <button class="buttondown" onclick="decreaseBF(5)"></button>
-            <button class="buttondown" onclick="decreaseBF(6)"></button>
-            <button class="buttondown" onclick="decreaseBF(7)"></button>
-            <button class="buttondown" onclick="decreaseBF(8)"></button>
-          </div>
+  <div id="buttondownlocation">
+    <button class="buttondown" onclick="decreaseBF(1)"></button>
+    <button class="buttondown" onclick="decreaseBF(2)"></button>
+    <button class="buttondown" onclick="decreaseBF(3)"></button>
+    <button class="buttondown" onclick="decreaseBF(4)"></button>
+    <button class="buttondown" onclick="decreaseBF(5)"></button>
+    <button class="buttondown" onclick="decreaseBF(6)"></button>
+    <button class="buttondown" onclick="decreaseBF(7)"></button>
+    <button class="buttondown" onclick="decreaseBF(8)"></button>
+  </div>
 
-          <script>
-            function showIMG(item){
-              document.getElementById(item).style.display='block';
-            }
-            function closeIMG(item){
-              document.getElementById(item).style.display='none';
-            }
+  <script>
+    function showIMG(item) {
+      document.getElementById(item).style.display = 'block';
+    }
+
+    function closeIMG(item) {
+      document.getElementById(item).style.display = 'none';
+    }
 
 
-            var diagInd = [0,2,5,9,14,20,27,35]
-            var chart = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-            var recipeChart = [0,0,0,0,0,0,0,0,0]
-            var itemCount = [0,0,0,0,0,0,0,0]
-            var itemsObtained = [0,0,0,0,0,0,0,0]
-            var names = ["InfinityEdge","SwordoftheDivine","RapidFireCannon","GuardianAngels","PhantomDancer",
-                        "Thornmail","BloodThirster","CursedBlade","SwordBreaker","DragonsClaw",
-                        "HextechGunblade","GuinsoosRageBlade","LocketoftheIronSoliari","IonicSpark","RabadonsDeathcap",
-                        "SpearofShojin","StaticShiv","FrozenHeart","Hush","LudensEcho",
-                        "SeraphsEmbrace","ZekesHerald","TitanicHydra","RedBuff","Zephyr",
-                        "Morellonomicon","Redemption","WarmogsArmor","YoumuusGhostBlade","BladeoftheRuinedKing","KnightsVow",
-                        "RunaansHurricane","Yuumi","Darkin","FrozenMallet","ForceofNature"]
+    var diagInd = [0, 2, 5, 9, 14, 20, 27, 35]
+    var chart = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    var recipeChart = [0, 0, 0, 0, 0, 0, 0, 0, 0]
+    var itemCount = [0, 0, 0, 0, 0, 0, 0, 0]
+    var itemsObtained = [0, 0, 0, 0, 0, 0, 0, 0]
+    var names = ["InfinityEdge", "SwordoftheDivine", "RapidFireCannon", "GuardianAngels", "PhantomDancer",
+      "Thornmail", "BloodThirster", "CursedBlade", "SwordBreaker", "DragonsClaw",
+      "HextechGunblade", "GuinsoosRageBlade", "LocketoftheIronSoliari", "IonicSpark", "RabadonsDeathcap",
+      "SpearofShojin", "StaticShiv", "FrozenHeart", "Hush", "LudensEcho",
+      "SeraphsEmbrace", "ZekesHerald", "TitanicHydra", "RedBuff", "Zephyr",
+      "Morellonomicon", "Redemption", "WarmogsArmor", "YoumuusGhostBlade", "BladeoftheRuinedKing", "KnightsVow",
+      "RunaansHurricane", "Yuumi", "Darkin", "FrozenMallet", "ForceofNature"
+    ]
 
 
-            function obtain(){
-              for(i=0; i<9; i++){
-                if(itemCount[i] >= 1){
-                  itemsObtained[i] = 1;
-                }
-              }
-            }
-
-            function clearCharts(){
-              chart = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
-              itemsObtained = [0,0,0,0,0,0,0,0];
-            }
-
-            function generateChart(){ //use itemsObtained
-              clearCharts();
-              obtain();
-              for(n=1; n<9; n++){
-                if(itemsObtained[n-1] == 1){
-                  var startIND = ((n*(n+1))/2)-1;
-                  var startIND2 = ((n*(n-1))/2);
-                  k = n-1;
-                  for(i = startIND; i<36;i+=k){
-                    chart[i]++;
-                    k++;
-                  }
-                }
-              }
-              for(n=1; n<9; n++){
-                var startIND = ((n*(n+1))/2)-1;
-                var startIND2 = ((n*(n-1))/2);
-                for(i = startIND2; i<=startIND; i++){
-                  chart[i] = (itemsObtained[n-1] && chart[i]);
-                  }
-              }
-            }
-
-            function addItem(n){
-              itemCount[n-1]++;
-              }
-
-            function subItem(n){
-              if(itemCount[n-1] >= 1){
-                itemCount[n-1]--;
-              }
-            }
-
-            function generateImages(){
-              for(i=0; i<36; i++){
-                if(diagInd.indexOf(i) >= 0){
-                  if(itemCount[diagInd.indexOf(i)] >= 2){
-                    showIMG(names[i]);
-                  }
-                }
-                else if(chart[i] == 1){
-                    showIMG(names[i]);
-                }
-              }
-            }
-
-            function resetImages(){
-              for(i=0; i<36; i++){
-                  closeIMG(names[i]);
-                }
-            }
-
-            function increaseBF(j){
-              addItem(j);
-              generateChart();
-              resetImages();
-              generateImages();
-              showCount();
-            }
-
-            function decreaseBF(j){
-              subItem(j);
-              generateChart();
-              resetImages();
-              generateImages();
-              showCount();
-            }
-
-          </script>
-<!--  askdjfhkajsdhfklashdfklashdfklhasdklfh-->
-          <button onclick="myFunction()">Debug</button>
-          <p id="demo"></p>
-
-          <script>
-          function myFunction() {
-// DEBUGBJAADSFJASDFASJDFASDFJHAJSDHFJASDHFJASDFHASDJHFASJDHFJASHDFJASDHFJASHDFJHASDJFHJASDHFHASDHJFASHDFHAJSDHFAJSDFHJASDHFJASDHFAJSDHFJASDFHAJSDHFJASDHFJASDHFJASDHFJASDHFAJSDFHADS
-            var y = chart.toString();
-// DEBUGBJAADSFJASDFASJDFASDFJHAJSDHFJASDHFJASDFHASDJHFASJDHFJASHDFJASDHFJASHDFJHASDJFHJASDHFHASDHJFASHDFHAJSDHFAJSDFHJASDHFJASDHFAJSDHFJASDFHAJSDHFJASDHFJASDHFJASDHFJASDHFAJSDFHADS
-            document.getElementById("demo").innerHTML = y;
-          }
-
-          function reset() {
-            chart = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
-            recipeChart = [0,0,0,0,0,0,0,0,0];
-            itemCount = [0,0,0,0,0,0,0,0];
-            itemsObtained = [0,0,0,0,0,0,0,0];
-            resetImages();
-            showCount();
-          }
-          </script>
-<!-- asjdhfgahjsdgfjasdgfashkdgfjkashdgf -->
-        <div id="resetbutton">
-        <button class="buttonreset" onclick="reset()"></button>
-        <p id="reset"></p>
-        </div>
-
-        <p id="count"></p>
-        <script>
-        reset();
-        function showCount() {
-          var z = itemCount.toString();
-          document.getElementById("count").innerHTML = z;
+    function obtain() {
+      for (i = 0; i < 9; i++) {
+        if (itemCount[i] >= 1) {
+          itemsObtained[i] = 1;
         }
-        </script>
+      }
+    }
 
-  </body>
+    function clearCharts() {
+      chart = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+      itemsObtained = [0, 0, 0, 0, 0, 0, 0, 0];
+    }
+
+    function generateChart() { //use itemsObtained
+      clearCharts();
+      obtain();
+      for (n = 1; n < 9; n++) {
+        if (itemsObtained[n - 1] == 1) {
+          var startIND = ((n * (n + 1)) / 2) - 1;
+          var startIND2 = ((n * (n - 1)) / 2);
+          k = n - 1;
+          for (i = startIND; i < 36; i += k) {
+            chart[i]++;
+            k++;
+          }
+        }
+      }
+      for (n = 1; n < 9; n++) {
+        var startIND = ((n * (n + 1)) / 2) - 1;
+        var startIND2 = ((n * (n - 1)) / 2);
+        for (i = startIND2; i <= startIND; i++) {
+          chart[i] = (itemsObtained[n - 1] && chart[i]);
+        }
+      }
+    }
+
+    function addItem(n) {
+      itemCount[n - 1]++;
+    }
+
+    function subItem(n) {
+      if (itemCount[n - 1] >= 1) {
+        itemCount[n - 1]--;
+      }
+    }
+
+    function generateImages() {
+      for (i = 0; i < 36; i++) {
+        if (diagInd.indexOf(i) >= 0) {
+          if (itemCount[diagInd.indexOf(i)] >= 2) {
+            showIMG(names[i]);
+          }
+        } else if (chart[i] == 1) {
+          showIMG(names[i]);
+        }
+      }
+    }
+
+    function resetImages() {
+      for (i = 0; i < 36; i++) {
+        closeIMG(names[i]);
+      }
+    }
+
+    function increaseBF(j) {
+      addItem(j);
+      generateChart();
+      resetImages();
+      generateImages();
+      showCount();
+    }
+
+    function decreaseBF(j) {
+      subItem(j);
+      generateChart();
+      resetImages();
+      generateImages();
+      showCount();
+    }
+  </script>
+  <!--  askdjfhkajsdhfklashdfklashdfklhasdklfh-->
+  <button onclick="myFunction()">Debug</button>
+  <p id="demo"></p>
+
+  <script>
+    function myFunction() {
+      // DEBUGBJAADSFJASDFASJDFASDFJHAJSDHFJASDHFJASDFHASDJHFASJDHFJASHDFJASDHFJASHDFJHASDJFHJASDHFHASDHJFASHDFHAJSDHFAJSDFHJASDHFJASDHFAJSDHFJASDFHAJSDHFJASDHFJASDHFJASDHFJASDHFAJSDFHADS
+      var y = chart.toString();
+      // DEBUGBJAADSFJASDFASJDFASDFJHAJSDHFJASDHFJASDFHASDJHFASJDHFJASHDFJASDHFJASHDFJHASDJFHJASDHFHASDHJFASHDFHAJSDHFAJSDFHJASDHFJASDHFAJSDHFJASDFHAJSDHFJASDHFJASDHFJASDHFJASDHFAJSDFHADS
+      document.getElementById("demo").innerHTML = y;
+    }
+
+    function reset() {
+      chart = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+      recipeChart = [0, 0, 0, 0, 0, 0, 0, 0, 0];
+      itemCount = [0, 0, 0, 0, 0, 0, 0, 0];
+      itemsObtained = [0, 0, 0, 0, 0, 0, 0, 0];
+      resetImages();
+      showCount();
+    }
+  </script>
+  <!-- asjdhfgahjsdgfjasdgfashkdgfjkashdgf -->
+  <div id="resetbutton">
+    <button class="buttonreset" onclick="reset()"></button>
+    <p id="reset"></p>
+  </div>
+
+  <p id="count"></p>
+  <script>
+    reset();
+
+    function showCount() {
+      var z = itemCount.toString();
+      document.getElementById("count").innerHTML = z;
+    }
+  </script>
+
+</body>
+
 </html>

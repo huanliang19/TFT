@@ -1,0 +1,80 @@
+#recipe_items {
+  position: absolute;
+  top: 15%;
+  left: 40%;
+}
+
+#complete_items {
+  position: absolute;
+  top: 35%;
+  left: 10%;
+  display: flex;
+}
+
+#table {
+  position: absolute;
+  top: 46%;
+  left: 73%;
+  display: flex;
+}
+
+#buttonuplocation {
+  position: absolute;
+  top: 12%;
+  left: 40%;
+}
+
+#buttondownlocation {
+  position: absolute;
+  top: 20%;
+  left: 40%;
+}
+
+.buttonup {
+  background: url(https://uc0c824ba3acddd3d5bc0c3cd1d2.previews.dropboxusercontent.com/p/thumb/AAexSC-BlJnPG1Lw7kfB4T2gtS3q5Fx4zdH1EzDHcN_4D5XF3e-DfmQkomToWPok_509qysXn1JtoIGiP2HpBciIZvdi7cbVOTwUEIJjWp8zwWESO_xYW4N1QtcGMh0f1zDa1YNKZCIETVspmfdr8hQ3yrRSGKqGuxuHjC056uc_r1M-IFQ1umYyBSAH-a7rtIQU7Aqmqz7c0SKut1FcJqazpRXkS5CiS3QEhY67BZD9w4pdM_omI5rywxM9UVTuY1RQC8KgdX97BJyKzR37P8S8btNTdV1i5DF1zcrZP4yJx8ThYwStyB7dCZFveCrVOsPGuMCeQmczdLaZu870KUVRi7AlYan4pVyvkY3ngBGDAcHGU7mkEstbIyEkSUZf3AE/p.png?size=2048x1536&size_mode=3);
+  background-repeat: no-repeat;
+  padding: 0;
+  border: none;
+}
+
+.buttondown {
+  background: url(https://uccc6e3d8a741c497c7854d53847.previews.dropboxusercontent.com/p/thumb/AAd9BQhPBkxvqmooHG_Lng85kri1Sr8xjRbYRI9t3m_2LLUgjQpbYc2CVJx2HJq3_co8DQKOooSq-Gq9ya5al-BgGxyIG9zhtphrqPG3DmWWJ-nE7oafhr5nzeH4KKoGSKDNJjHf1yamzSvAdEXt_yrM7X1qsi_ITIPbHpTjqLvXtt4d4Ow-iFg2jLFFeSJgb_9lzAdWFryxI9-RECt4D1LwdPpNO3nsHU1OpCfcvoVI32uCiwb3Z9wdNFdZa3vdaU40xJAcfdlHCUyMqykizEiA8rGZtvVEpCSjVRbM8qtYnSYtse9UotTqkp4mU3YJTxZLd62HdHd2x44mmcQhxJVVDfUfeWytzqJCzIluDO2BJ8hjz-kaNfs9Mk-y0vDvR4o/p.png?fv_content=true&size_mode=5);
+  background-repeat: no-repeat;
+  padding: 0;
+  border: none;
+}
+
+.buttonreset {
+  background: url(https://www.mobafire.com/images/ability/ekko-chronobreak.png);
+  background-repeat: no-repeat;
+  padding: 0;
+  height: 64px;
+  width: 64px;
+}
+
+#resetbutton {
+  position: absolute;
+  top: 15%;
+  left: 35%;
+  display: flex;
+}
+
+#count {
+  position: absolute;
+  top: 18%;
+  left: 40%;
+  letter-spacing: 12px;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: bold;
+}
+
+body {
+  background-image: url("https://s1.ibtimes.com/sites/www.ibtimes.com/files/styles/embed/public/2019/05/14/battle-principal-yuumi-league-legends-riot-games.jpg");
+  background-color: #cccccc;
+}
+
+button {
+  width: 48px;
+  height: 30px;
+}
