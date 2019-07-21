@@ -147,28 +147,33 @@ button {
   position: absolute;
   top: 52%;
   left: 10%;
+  display:inline;
 }
 
 #origin2 {
   position: absolute;
   top: 52%;
   left: 30%;
+  display:block;
 }
 
 #origin3 {
   position: absolute;
   top: 52%;
   left: 47%;
+  display:block;
 }
 
 #class4 {
   position: absolute;
   top: 52%;
   left: 64%;
+  display:block;
 }
 
 #class5 {
   position: absolute;
   top: 52%;
   left: 84%;
+  display:block;
 }
